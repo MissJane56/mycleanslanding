@@ -186,6 +186,7 @@ function LandingPage() {
               <div className="grid gap-2.5 mt-5">
                 <CheckItem>Manage bookings</CheckItem>
                 <CheckItem>Track jobs</CheckItem>
+                <CheckItem>Send reports</CheckItem>
                 <CheckItem>Send invoices</CheckItem>
                 <CheckItem>Accept payments</CheckItem>
                 <CheckItem>Communicate with clients</CheckItem>
