@@ -1,9 +1,32 @@
 @import "tailwindcss" source("../");
 
+@theme {
+  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-display: 'Newsreader', Georgia, serif;
+  --color-page: #faf9f4;
+  --color-ink: #17231d;
+  --color-muted: #5e6b62;
+  --color-surface: #eef4ef;
+  --color-line: #e2dfd3;
+  --color-primary: #0a7d5a;
+  --color-mint: #9fe5cf;
+  --color-mint-ink: #0a3d2c;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-mint);
+  color: var(--color-mint-ink);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa8a1;
 }
 
 code {

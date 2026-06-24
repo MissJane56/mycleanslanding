@@ -13,12 +13,20 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'MyCleans.App — Connecting Cleaners & BnB Hosts',
+        title: 'MyCleans.app — Creating Clean Connections',
       },
       {
         name: 'description',
         content:
-          'An innovative solution connecting professional cleaners and self-managing BnB hosts. Get paid quicker. Get reliable cleaners.',
+          'MyCleans is an innovative platform connecting professional cleaners and self-managing BnB hosts, built for trust, transparency, and smooth operations.',
+      },
+    ],
+    links: [
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap',
       },
     ],
   }),
