@@ -325,10 +325,16 @@ function LandingPage() {
             <form
               name="waitlist"
               data-netlify="true"
+              netlify-honeypot="bot-field"
               onSubmit={handleWaitlistSubmit}
               className="mt-9 mx-auto max-w-[520px] text-left bg-page border border-line rounded p-7"
             >
               <input type="hidden" name="form-name" value="waitlist" />
+              <p className="hidden" aria-hidden="true">
+                <label>
+                  Don't fill this out: <input tabIndex={-1} name="bot-field" />
+                </label>
+              </p>
               <input type="hidden" name="role" value={role} />
 
               <label className="block text-sm font-bold text-ink mb-2">I am a…</label>
@@ -473,8 +479,19 @@ function LandingPage() {
             </div>
 
             {suggestState !== 'done' ? (
-              <form name="feature-suggestions" data-netlify="true" onSubmit={handleSuggestSubmit} className="mt-5 text-left">
+              <form
+                name="feature-suggestions"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSuggestSubmit}
+                className="mt-5 text-left"
+              >
                 <input type="hidden" name="form-name" value="feature-suggestions" />
+                <p className="hidden" aria-hidden="true">
+                  <label>
+                    Don't fill this out: <input tabIndex={-1} name="bot-field" />
+                  </label>
+                </p>
                 <p className="m-0 mb-4.5 text-sm leading-relaxed text-muted">
                   What would make MyCleans.app perfect for the way you work? We read every suggestion.
                 </p>

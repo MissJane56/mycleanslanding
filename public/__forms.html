@@ -7,15 +7,17 @@
 <body>
   <p>This page exists only so Netlify can detect our forms. It is never linked to.</p>
 
-  <form name="waitlist" data-netlify="true">
+  <form name="waitlist" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="waitlist" />
+    <input type="text" name="bot-field" />
     <input type="text" name="role" />
     <input type="text" name="name" />
     <input type="email" name="email" />
   </form>
 
-  <form name="feature-suggestions" data-netlify="true">
+  <form name="feature-suggestions" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="feature-suggestions" />
+    <input type="text" name="bot-field" />
     <textarea name="idea"></textarea>
     <input type="email" name="email" />
   </form>
