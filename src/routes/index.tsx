@@ -177,7 +177,7 @@ function LandingPage() {
       {/* FOR CLEANERS */}
       <section id="cleaners" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
-          <div className="flex flex-wrap items-start gap-12">
+          <div className="flex flex-wrap items-start gap-8">
             <div className="flex-1 min-w-80">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">For cleaners</span>
               <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight max-w-[14ch]">
@@ -200,7 +200,7 @@ function LandingPage() {
               </a>
             </div>
             <div className="flex-1 min-w-80">
-              <div className="w-3/4 mx-auto rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
+              <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img
                   src="/images/fistbump.jpg"
                   alt="A host and cleaner fist-bump, with the MyCleans.app invoice screen above them"
@@ -248,9 +248,9 @@ function LandingPage() {
       {/* FOR HOSTS */}
       <section id="hosts" className="scroll-mt-18 bg-surface">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
-          <div className="flex flex-wrap-reverse items-start gap-12">
+          <div className="flex flex-wrap-reverse items-start gap-8">
             <div className="flex-1 min-w-80">
-              <div className="w-3/4 mx-auto rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
+              <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img
                   src="/images/hifive.jpg"
                   alt="A host and a professional cleaner high-five, with the MyCleans.app report screen above them"
