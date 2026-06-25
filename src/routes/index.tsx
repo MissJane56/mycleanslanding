@@ -189,7 +189,7 @@ function LandingPage() {
                 <CheckItem>Send reports</CheckItem>
                 <CheckItem>Send invoices</CheckItem>
                 <CheckItem>Accept payments</CheckItem>
-                <CheckItem>Communicate with clients</CheckItem>
+                <CheckItem>Instant messaging</CheckItem>
                 <CheckItem>Seamless workflow</CheckItem>
               </div>
               <a
