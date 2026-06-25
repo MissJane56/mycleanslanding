@@ -152,7 +152,6 @@ function LandingPage() {
                 {content.hero.heading}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
-              <p className="mt-4 text-sm text-muted">{content.hero.footnote}</p>
             </div>
             <div className="w-full max-w-[640px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
@@ -407,6 +406,14 @@ function LandingPage() {
               </p>
             </div>
           )}
+
+          <button
+            type="button"
+            onClick={() => setShowSuggest(true)}
+            className="inline-flex items-center mt-7 px-7 py-4 rounded bg-transparent border-[1.5px] border-ink text-ink text-base font-bold cursor-pointer hover:bg-black/5"
+          >
+            {content.register.suggestCta}
+          </button>
         </div>
       </section>
 

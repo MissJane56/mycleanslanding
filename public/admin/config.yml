@@ -63,7 +63,6 @@ collections:
               - { label: "Badge Text", name: "badge", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }
-              - { label: "Footnote", name: "footnote", widget: "string" }
               - label: "'The Missing Piece' Card"
                 name: "card"
                 widget: "object"
@@ -156,6 +155,7 @@ collections:
               - { label: "Form Footnote", name: "formNote", widget: "string" }
               - { label: "Success Heading", name: "successHeading", widget: "string" }
               - { label: "Success Message", name: "successParagraph", widget: "text" }
+              - { label: "Suggest a Feature Button Label", name: "suggestCta", widget: "string" }
 
           - label: "Footer"
             name: "footer"

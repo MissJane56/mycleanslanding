@@ -11,7 +11,8 @@
     "submittingLabel": "Joining…",
     "formNote": "No spam, ever. We'll only email you about the launch.",
     "successHeading": "You're on the list!",
-    "successParagraph": "We'll be in touch the moment MyCleans launches."
+    "successParagraph": "We'll be in touch the moment MyCleans launches.",
+    "suggestCta": "Suggest a feature"
   },
   "meta": {
     "title": "MyCleans - Creating Clean Connections",
@@ -56,7 +57,6 @@
     "badge": "Launching soon",
     "heading": "MyCleans",
     "paragraph": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, job scheduling, reporting, invoicing and payments.",
-    "footnote": "No spam. Be first to know the moment we launch.",
     "card": {
       "image": "/images/puzzle.png",
       "imageAlt": "Puzzle pieces fitting together",
