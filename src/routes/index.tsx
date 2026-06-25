@@ -26,6 +26,14 @@ function Check() {
   )
 }
 
+function Cross() {
+  return (
+    <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-line text-muted text-xs font-extrabold">
+      ✕
+    </span>
+  )
+}
+
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 text-base text-ink">
@@ -64,8 +72,8 @@ function ProblemColumn({ label, points }: { label: string; points: string[] }) {
       <span className="text-sm font-extrabold tracking-widest uppercase text-primary">{label}</span>
       <ul className="grid gap-2.5 mt-3 list-none p-0 m-0">
         {points.map((point) => (
-          <li key={point} className="flex gap-2.5 text-base text-muted">
-            <span className="flex-none text-primary">•</span>
+          <li key={point} className="flex items-center gap-2.5 text-base text-muted">
+            <Cross />
             {point}
           </li>
         ))}
@@ -179,7 +187,10 @@ function LandingPage() {
                     <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">
                       {content.problem.solutionLabel}
                     </span>
-                    <div className="mt-2 font-display text-xl font-semibold text-ink">{content.problem.closingBrand}</div>
+                    <div className="mt-2 flex items-center justify-center gap-2">
+                      <Check />
+                      <span className="font-display text-xl font-semibold text-ink">{content.problem.closingBrand}</span>
+                    </div>
                     <p className="mt-1 text-base text-muted">{content.problem.closingTagline}</p>
                   </div>
                 </div>
