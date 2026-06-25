@@ -159,37 +159,29 @@ function LandingPage() {
             <div className="w-full max-w-[640px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
-                <div className="p-8 md:p-10">
-                  <h2 className="font-display text-2xl font-medium tracking-[-0.02em] text-ink text-center">
-                    {content.problem.heading}
-                  </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-7 text-left">
-                    <ProblemColumn label={content.problem.hostsLabel} points={content.problem.hostsPoints} />
-                    <ProblemColumn label={content.problem.cleanersLabel} points={content.problem.cleanersPoints} />
-                  </div>
-                  <div className="mt-8 pt-7 border-t border-line text-center">
-                    <div className="font-display text-xl font-semibold text-ink">{content.problem.closingBrand}</div>
-                    <p className="mt-1 text-base text-muted">{content.problem.closingTagline}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full max-w-[480px]">
-              <div className="relative rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
-                <div className="h-1.5 bg-primary" />
-                <div className="px-9 pt-10 pb-5 text-center">
+                <div className="p-8 md:p-10 text-center">
                   <img
                     src={content.hero.card.image}
                     alt={content.hero.card.imageAlt}
                     className="block w-13 h-13 mx-auto"
                   />
-                  <h3 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
+                  <h2 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
                     {content.hero.card.heading}
-                  </h3>
-                  <p className="mt-4 text-base leading-relaxed text-muted">
-                    {content.hero.card.paragraph}{' '}
-                    <span className="text-ink font-semibold">{content.hero.card.highlight}</span>
-                  </p>
+                  </h2>
+                  <p className="mt-4 text-base leading-relaxed text-muted">{content.hero.card.paragraph}</p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 text-left">
+                    <ProblemColumn label={content.problem.hostsLabel} points={content.problem.hostsPoints} />
+                    <ProblemColumn label={content.problem.cleanersLabel} points={content.problem.cleanersPoints} />
+                  </div>
+
+                  <div className="mt-8 pt-7 border-t border-line text-center">
+                    <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">
+                      {content.problem.solutionLabel}
+                    </span>
+                    <div className="mt-2 font-display text-xl font-semibold text-ink">{content.problem.closingBrand}</div>
+                    <p className="mt-1 text-base text-muted">{content.problem.closingTagline}</p>
+                  </div>
                 </div>
               </div>
             </div>
