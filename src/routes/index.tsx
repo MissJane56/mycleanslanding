@@ -204,7 +204,7 @@ function LandingPage() {
       <section id="cleaners" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap items-start gap-8">
-            <div className="flex-1 min-w-80">
+            <div className="flex-none w-full sm:w-auto sm:max-w-[420px] min-w-80">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
                 {content.cleaners.eyebrow}
               </span>
