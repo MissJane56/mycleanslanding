@@ -99,10 +99,10 @@ function LandingPage() {
       <nav className="sticky top-0 z-50 flex items-center justify-between gap-6 px-6 md:px-16 py-4 bg-page border-b border-line">
         <a href="#top" className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight no-underline">
           <span className="inline-flex items-center justify-center w-7.5 h-7.5 rounded-lg overflow-hidden">
-            <img src="/images/logo.png" alt="MyCleans.app logo" className="block w-full h-full object-cover" />
+            <img src="/images/logo.png" alt="MyCleans logo" className="block w-full h-full object-cover" />
           </span>
           <span>
-            MyCleans<span className="text-primary">.app</span>
+            My<span className="text-primary">Cleans</span>
           </span>
         </a>
         <div className="hidden md:flex items-center gap-7 text-sm font-semibold">
@@ -203,7 +203,7 @@ function LandingPage() {
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img
                   src="/images/fistbump.jpg"
-                  alt="A host and cleaner fist-bump, with the MyCleans.app invoice screen above them"
+                  alt="A host and cleaner fist-bump, with the MyCleans invoice screen above them"
                   className="block w-full h-auto"
                 />
               </div>
@@ -253,7 +253,7 @@ function LandingPage() {
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img
                   src="/images/hifive.jpg"
-                  alt="A host and a professional cleaner high-five, with the MyCleans.app report screen above them"
+                  alt="A host and a professional cleaner high-five, with the MyCleans report screen above them"
                   className="block w-full h-auto"
                 />
               </div>
@@ -417,7 +417,7 @@ function LandingPage() {
               </div>
               <h3 className="mt-5 font-display text-2xl font-medium text-ink">You're on the list!</h3>
               <p className="mt-3 text-base leading-relaxed text-muted">
-                Thanks{waitlistName ? `, ${waitlistName.split(' ')[0]}` : ''}. We'll be in touch the moment MyCleans.app launches.
+                Thanks{waitlistName ? `, ${waitlistName.split(' ')[0]}` : ''}. We'll be in touch the moment MyCleans launches.
               </p>
             </div>
           )}
@@ -430,10 +430,10 @@ function LandingPage() {
           <div className="max-w-[340px]">
             <div className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight">
               <span className="inline-flex items-center justify-center w-7 h-7 rounded overflow-hidden">
-                <img src="/images/logo.png" alt="MyCleans.app logo" className="block w-full h-full object-cover" />
+                <img src="/images/logo.png" alt="MyCleans logo" className="block w-full h-full object-cover" />
               </span>
               <span>
-                MyCleans<span className="text-primary">.app</span>
+                My<span className="text-primary">Cleans</span>
               </span>
             </div>
             <p className="mt-3.5 text-sm leading-relaxed text-muted">
@@ -460,7 +460,7 @@ function LandingPage() {
         </div>
         <div className="border-t border-line">
           <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-4 text-sm text-muted">
-            © 2026 MyCleans.app. All rights reserved.
+            © 2026 MyCleans. All rights reserved.
           </div>
         </div>
       </footer>
@@ -505,7 +505,7 @@ function LandingPage() {
                   </label>
                 </p>
                 <p className="m-0 mb-4.5 text-sm leading-relaxed text-muted">
-                  What would make MyCleans.app perfect for the way you work? We read every suggestion.
+                  What would make MyCleans perfect for the way you work? We read every suggestion.
                 </p>
                 <label htmlFor="suggest-idea" className="block text-sm font-bold text-ink mb-2">
                   Your idea
