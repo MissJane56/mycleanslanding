@@ -53,6 +53,7 @@ collections:
             name: "nav"
             widget: "object"
             fields:
+              - { label: "Tagline (under logo)", name: "tagline", widget: "string" }
               - { label: "Register Button Label", name: "ctaLabel", widget: "string" }
 
           - label: "Hero Section"
@@ -62,8 +63,6 @@ collections:
               - { label: "Badge Text", name: "badge", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }
-              - { label: "Primary Button Label", name: "ctaPrimary", widget: "string" }
-              - { label: "Secondary Button Label", name: "ctaSecondary", widget: "string" }
               - { label: "Footnote", name: "footnote", widget: "string" }
               - label: "'The Missing Piece' Card"
                 name: "card"
@@ -74,6 +73,24 @@ collections:
                   - { label: "Heading", name: "heading", widget: "string" }
                   - { label: "Paragraph", name: "paragraph", widget: "text" }
                   - { label: "Highlighted Closing Line", name: "highlight", widget: "string" }
+
+          - label: "'The Problem' Box"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Hosts Column Label", name: "hostsLabel", widget: "string" }
+              - label: "Hosts Pain Points"
+                name: "hostsPoints"
+                widget: "list"
+                field: { label: "Point", name: "point", widget: "string" }
+              - { label: "Cleaners Column Label", name: "cleanersLabel", widget: "string" }
+              - label: "Cleaners Pain Points"
+                name: "cleanersPoints"
+                widget: "list"
+                field: { label: "Point", name: "point", widget: "string" }
+              - { label: "Closing Brand Name", name: "closingBrand", widget: "string" }
+              - { label: "Closing Tagline", name: "closingTagline", widget: "string" }
 
           - label: "For Cleaners Section"
             name: "cleaners"

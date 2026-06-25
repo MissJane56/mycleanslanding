@@ -1,5 +1,6 @@
 {
   "nav": {
+    "tagline": "Creating Clean Connections",
     "ctaLabel": "Register Interest"
   },
   "register": {
@@ -53,10 +54,8 @@
   },
   "hero": {
     "badge": "Launching soon",
-    "heading": "Creating clean connections.",
+    "heading": "MyCleans",
     "paragraph": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, job scheduling, reporting, invoicing and payments.",
-    "ctaPrimary": "Register your interest",
-    "ctaSecondary": "Suggest a feature",
     "footnote": "No spam. Be first to know the moment we launch.",
     "card": {
       "image": "/images/puzzle.png",
@@ -65,6 +64,25 @@
       "paragraph": "There's a grey area between self-managing hosts and cleaners. Hosts need accurate reporting on guest cleanliness to leave correct reviews, and cleaners need clear schedules so they can plan their time efficiently.",
       "highlight": "MyCleans covers this and more."
     }
+  },
+  "problem": {
+    "heading": "The Problem",
+    "hostsLabel": "Hosts",
+    "hostsPoints": [
+      "Different platforms for messaging",
+      "No proof a clean was completed",
+      "Last-minute cleaner cancellations",
+      "Having to guess on guest ratings"
+    ],
+    "cleanersLabel": "Cleaners",
+    "cleanersPoints": [
+      "Finding time to invoice",
+      "Managing bookings manually",
+      "No professional reporting tools",
+      "Chasing payments"
+    ],
+    "closingBrand": "MyCleans",
+    "closingTagline": "One platform. One workflow."
   },
   "footer": {
     "tagline": "Creating clean connections between professional cleaners and self-managing BnB hosts.",
