@@ -213,16 +213,16 @@ function LandingPage() {
             <div className="h-1.5 bg-primary" />
             <div className="p-10 text-center">
               <p className="mx-auto text-lg leading-relaxed text-ink max-w-[62ch]">
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">MyCleans</span>{' '}
+                <span className="font-display italic text-xl md:text-2xl font-semibold">MyCleans</span>{' '}
                 makes it super easy to{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">report</span> on
+                <span className="font-display italic text-xl md:text-2xl font-semibold">report</span> on
                 the property condition with just a few simple yes/no questions and a couple of{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">photos</span>.
+                <span className="font-display italic text-xl md:text-2xl font-semibold">photos</span>.
                 Hosts will see{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">exactly</span>{' '}
+                <span className="font-display italic text-xl md:text-2xl font-semibold">exactly</span>{' '}
                 what you're dealing with before you've even left the property, and realise that
                 you are not just cleaning, you're{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">
+                <span className="font-display italic text-xl md:text-2xl font-semibold">
                   providing critical intelligence
                 </span>
                 .
