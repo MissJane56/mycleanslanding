@@ -95,7 +95,7 @@
   },
   "cleaners": {
     "eyebrow": "For cleaners",
-    "heading": "Your business, beautifully organised.",
+    "heading": "Your business, your way.",
     "checklist": [
       "Manage bookings",
       "Track jobs",
@@ -103,7 +103,8 @@
       "Send invoices",
       "Accept payments",
       "Instant messaging",
-      "Seamless workflow"
+      "Seamless workflow",
+      "MyCleans makes it super easy to report on the property condition with just a few simple yes/no questions and optional photos. Hosts will see exactly what you're dealing with before you've even left the property. You're not just cleaning, you're providing critical intelligence."
     ],
     "cta": "Get started",
     "image": "/images/fistbump.jpg",
