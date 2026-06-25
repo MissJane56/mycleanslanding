@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 
+import content from '../../content/landing.json'
+
 export const Route = createFileRoute('/')({
   component: LandingPage,
 })
@@ -114,7 +116,7 @@ function LandingPage() {
           href="#register"
           className="inline-flex items-center px-5 py-2.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
         >
-          Register Interest
+          {content.nav.ctaLabel}
         </a>
       </nav>
 
@@ -125,47 +127,44 @@ function LandingPage() {
             <div className="flex-1 max-w-[620px] mx-auto">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mint text-mint-ink text-xs font-bold tracking-wide">
                 <span className="w-1.5 h-1.5 rounded-full bg-mint-ink inline-block" />
-                Launching soon
+                {content.hero.badge}
               </span>
               <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink">
-                Creating clean connections.
+                {content.hero.heading}
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">
-                MyCleans is an innovative platform connecting professional cleaners
-                and self-managing BnB hosts, built for trust, transparency, and
-                smooth operations.
-              </p>
+              <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
               <div className="flex flex-wrap gap-3.5 mt-8 justify-center">
                 <a
                   href="#register"
                   className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
                 >
-                  Register your interest
+                  {content.hero.ctaPrimary}
                 </a>
                 <button
                   type="button"
                   onClick={() => setShowSuggest(true)}
                   className="inline-flex items-center px-7 py-4 rounded bg-transparent border-[1.5px] border-ink text-ink text-base font-bold cursor-pointer hover:bg-black/5"
                 >
-                  Suggest a feature
+                  {content.hero.ctaSecondary}
                 </button>
               </div>
-              <p className="mt-4 text-sm text-muted">No spam. Be first to know the moment we launch.</p>
+              <p className="mt-4 text-sm text-muted">{content.hero.footnote}</p>
             </div>
             <div className="w-full max-w-[480px]">
               <div className="relative rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
                 <div className="px-9 pt-10 pb-5 text-center">
-                  <img src="/images/puzzle.png" alt="Puzzle pieces fitting together" className="block w-13 h-13 mx-auto" />
+                  <img
+                    src={content.hero.card.image}
+                    alt={content.hero.card.imageAlt}
+                    className="block w-13 h-13 mx-auto"
+                  />
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
-                    The Missing Piece
+                    {content.hero.card.heading}
                   </h3>
                   <p className="mt-4 text-base leading-relaxed text-muted">
-                    There's a grey area between self-managing hosts and cleaners.
-                    Hosts need accurate reporting on guest cleanliness to leave
-                    correct reviews, and cleaners need clear schedules so they can
-                    plan their time efficiently.{' '}
-                    <span className="text-ink font-semibold">MyCleans covers this and more.</span>
+                    {content.hero.card.paragraph}{' '}
+                    <span className="text-ink font-semibold">{content.hero.card.highlight}</span>
                   </p>
                 </div>
               </div>
@@ -179,47 +178,35 @@ function LandingPage() {
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap items-start gap-8">
             <div className="flex-1 min-w-80">
-              <span className="text-sm font-extrabold tracking-widest uppercase text-primary">For cleaners</span>
+              <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
+                {content.cleaners.eyebrow}
+              </span>
               <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight max-w-[14ch]">
-                Your business, beautifully organised.
+                {content.cleaners.heading}
               </h2>
               <div className="grid gap-2.5 mt-5">
-                <CheckItem>Manage bookings</CheckItem>
-                <CheckItem>Track jobs</CheckItem>
-                <CheckItem>Send reports</CheckItem>
-                <CheckItem>Send invoices</CheckItem>
-                <CheckItem>Accept payments</CheckItem>
-                <CheckItem>Instant messaging</CheckItem>
-                <CheckItem>Seamless workflow</CheckItem>
+                {content.cleaners.checklist.map((item) => (
+                  <CheckItem key={item}>{item}</CheckItem>
+                ))}
               </div>
               <a
                 href="#register"
                 className="inline-flex items-center mt-7 px-6 py-3.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
               >
-                Get started
+                {content.cleaners.cta}
               </a>
             </div>
             <div className="flex-1 min-w-80">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
-                <img
-                  src="/images/fistbump.jpg"
-                  alt="A host and cleaner fist-bump, with the MyCleans invoice screen above them"
-                  className="block w-full h-auto"
-                />
+                <img src={content.cleaners.image} alt={content.cleaners.imageAlt} className="block w-full h-auto" />
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 mt-16">
-            <CheckLine title="Get paid faster" desc="Professional invoicing in-app, no more chasing payments." />
-            <CheckLine title="Show your value" desc="Photos and instant condition reports prove your expertise." />
-            <CheckLine title="Save time" desc="Streamlined coordination means less admin, more real work." />
-            <CheckLine title="Build trust" desc="Transparent documentation justifies your rates." />
-            <CheckLine
-              title="Find quality clients"
-              desc="Connect with verified hosts on the directory who are looking for cleaning professionals."
-            />
-            <CheckLine title="Grow your business" desc="Build your portfolio and client base with ease." />
+            {content.cleaners.details.map((item) => (
+              <CheckLine key={item.title} title={item.title} desc={item.desc} />
+            ))}
           </div>
 
           <div className="mt-14 mx-auto max-w-[800px] rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
@@ -251,38 +238,27 @@ function LandingPage() {
           <div className="flex flex-wrap-reverse items-start gap-8">
             <div className="flex-1 min-w-80">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
-                <img
-                  src="/images/hifive.jpg"
-                  alt="A host and a professional cleaner high-five, with the MyCleans report screen above them"
-                  className="block w-full h-auto"
-                />
+                <img src={content.hosts.image} alt={content.hosts.imageAlt} className="block w-full h-auto" />
               </div>
             </div>
             <div className="flex-1 min-w-80">
-              <span className="text-sm font-extrabold tracking-widest uppercase text-primary">For hosts</span>
+              <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
+                {content.hosts.eyebrow}
+              </span>
               <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight max-w-[15ch]">
-                Operational clarity, without outsourced management.
+                {content.hosts.heading}
               </h2>
-              <p className="mt-5 text-lg leading-relaxed text-muted max-w-[48ch]">
-                Self-managing hosts don't want a full property manager, but the
-                hard parts still need to run smoothly. Get structured systems for
-                coordination, reporting, and invoicing, without giving up control
-                of your revenue.
-              </p>
+              <p className="mt-5 text-lg leading-relaxed text-muted max-w-[48ch]">{content.hosts.paragraph}</p>
               <div className="grid gap-3 mt-6">
-                <CheckLine title="Protect your Superhost status" desc="with instant condition reports." />
-                <CheckLine title="Claim damage protection" desc="with timestamped photo evidence." />
-                <CheckLine
-                  title="Find cleaners fast."
-                  desc="Browse the directory and book an emergency clean in minutes."
-                />
-                <CheckLine title="Streamlined invoicing." desc="Approve and pay in one click." />
+                {content.hosts.details.map((item) => (
+                  <CheckLine key={item.title} title={item.title} desc={item.desc} />
+                ))}
               </div>
               <a
                 href="#register"
                 className="inline-flex items-center mt-7 px-6 py-3.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
               >
-                Get started
+                {content.hosts.cta}
               </a>
             </div>
           </div>
@@ -293,30 +269,18 @@ function LandingPage() {
       <section id="features" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 pt-20 md:pt-24 pb-10 md:pb-12">
           <div className="text-center max-w-[660px] mx-auto">
-            <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">How it works</span>
+            <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">
+              {content.features.eyebrow}
+            </span>
             <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight">
-              Your workflow, redesigned.
+              {content.features.heading}
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-muted">
-              Three features that make every clean seamless for both sides of the relationship.
-            </p>
+            <p className="mt-4 text-lg leading-relaxed text-muted">{content.features.paragraph}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-14">
-            <FeatureCard
-              index="01"
-              title="Instant Reports"
-              desc="Simple, clear reports based on a star rating by the cleaner so hosts know exactly how to review the last guest. Quick for the cleaner too, a few clicks, and it's sent."
-            />
-            <FeatureCard
-              index="02"
-              title="Easy Invoices"
-              desc="When a report is done, an invoice is auto generated for the cleaner to approve in one click. When the host approves, it's paid immediately."
-            />
-            <FeatureCard
-              index="03"
-              title="The Latest Tech"
-              desc="Using Stripe, Calendar Sync to Airbnb and VRBO and a searchable cleaner directory, MyCleans has you covered whether you are an owner, a host, or a cleaner."
-            />
+            {content.features.cards.map((card) => (
+              <FeatureCard key={card.index} index={card.index} title={card.title} desc={card.desc} />
+            ))}
           </div>
         </div>
       </section>
@@ -324,14 +288,11 @@ function LandingPage() {
       {/* REGISTER */}
       <section id="register" className="scroll-mt-18 bg-page">
         <div className="max-w-[700px] mx-auto px-6 md:px-16 py-20 md:py-24 text-center">
-          <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">Register interest</span>
+          <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">{content.register.eyebrow}</span>
           <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight text-ink">
-            Ready to transform how you work?
+            {content.register.heading}
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-muted">
-            Join the waitlist today. Be first to experience cleaner coordination,
-            instant reporting, and seamless payments, all in one app.
-          </p>
+          <p className="mt-4 text-lg leading-relaxed text-muted">{content.register.paragraph}</p>
 
           {waitlistState !== 'done' ? (
             <form
@@ -397,7 +358,10 @@ function LandingPage() {
               {waitlistState === 'error' && (
                 <p className="mt-2.5 text-sm font-semibold text-[#c0392b]">
                   Something went wrong — please try again, or email{' '}
-                  <a href="mailto:hello@mycleans.com.au" className="underline">hello@mycleans.com.au</a> directly.
+                  <a href={`mailto:${content.footer.contactEmail}`} className="underline">
+                    {content.footer.contactEmail}
+                  </a>{' '}
+                  directly.
                 </p>
               )}
 
@@ -406,18 +370,18 @@ function LandingPage() {
                 disabled={waitlistState === 'submitting'}
                 className="w-full mt-3 py-4 rounded bg-primary text-white text-base font-bold cursor-pointer hover:brightness-95 disabled:opacity-60"
               >
-                {waitlistState === 'submitting' ? 'Joining…' : 'Join the waitlist'}
+                {waitlistState === 'submitting' ? content.register.submittingLabel : content.register.submitLabel}
               </button>
-              <p className="mt-3.5 text-center text-xs text-muted">No spam, ever. We'll only email you about the launch.</p>
+              <p className="mt-3.5 text-center text-xs text-muted">{content.register.formNote}</p>
             </form>
           ) : (
             <div className="mt-9 mx-auto max-w-[520px] bg-page border border-line rounded p-10">
               <div className="w-14 h-14 rounded-full bg-mint text-mint-ink flex items-center justify-center text-2xl font-extrabold mx-auto">
                 ✓
               </div>
-              <h3 className="mt-5 font-display text-2xl font-medium text-ink">You're on the list!</h3>
+              <h3 className="mt-5 font-display text-2xl font-medium text-ink">{content.register.successHeading}</h3>
               <p className="mt-3 text-base leading-relaxed text-muted">
-                Thanks{waitlistName ? `, ${waitlistName.split(' ')[0]}` : ''}. We'll be in touch the moment MyCleans launches.
+                Thanks{waitlistName ? `, ${waitlistName.split(' ')[0]}` : ''}. {content.register.successParagraph}
               </p>
             </div>
           )}
@@ -436,9 +400,7 @@ function LandingPage() {
                 My<span className="text-primary">Cleans</span>
               </span>
             </div>
-            <p className="mt-3.5 text-sm leading-relaxed text-muted">
-              Creating clean connections between professional cleaners and self-managing BnB hosts.
-            </p>
+            <p className="mt-3.5 text-sm leading-relaxed text-muted">{content.footer.tagline}</p>
           </div>
           <div className="flex flex-wrap gap-10 sm:gap-14">
             <div className="grid gap-2.5 text-sm">
@@ -454,14 +416,14 @@ function LandingPage() {
             </div>
             <div className="grid gap-2.5 text-sm">
               <span className="font-bold text-ink mb-0.5">Contact</span>
-              <a href="mailto:hello@mycleans.com.au" className="text-muted no-underline hover:text-primary">Email Us</a>
+              <a href={`mailto:${content.footer.contactEmail}`} className="text-muted no-underline hover:text-primary">
+                Email Us
+              </a>
             </div>
           </div>
         </div>
         <div className="border-t border-line">
-          <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-4 text-sm text-muted">
-            © 2026 MyCleans. All rights reserved.
-          </div>
+          <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-4 text-sm text-muted">{content.footer.copyright}</div>
         </div>
       </footer>
 
@@ -477,8 +439,12 @@ function LandingPage() {
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">Shape the app</span>
-                <h3 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em] text-ink">Suggest a feature</h3>
+                <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">
+                  {content.suggestModal.eyebrow}
+                </span>
+                <h3 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em] text-ink">
+                  {content.suggestModal.heading}
+                </h3>
               </div>
               <button
                 type="button"
@@ -504,9 +470,7 @@ function LandingPage() {
                     Don't fill this out: <input tabIndex={-1} name="bot-field" />
                   </label>
                 </p>
-                <p className="m-0 mb-4.5 text-sm leading-relaxed text-muted">
-                  What would make MyCleans perfect for the way you work? We read every suggestion.
-                </p>
+                <p className="m-0 mb-4.5 text-sm leading-relaxed text-muted">{content.suggestModal.intro}</p>
                 <label htmlFor="suggest-idea" className="block text-sm font-bold text-ink mb-2">
                   Your idea
                 </label>
@@ -539,7 +503,7 @@ function LandingPage() {
                   disabled={suggestState === 'submitting'}
                   className="w-full mt-3 py-4 rounded bg-primary text-white text-base font-bold cursor-pointer hover:brightness-95 disabled:opacity-60"
                 >
-                  {suggestState === 'submitting' ? 'Sending…' : 'Send suggestion'}
+                  {suggestState === 'submitting' ? content.suggestModal.submittingLabel : content.suggestModal.submitLabel}
                 </button>
               </form>
             ) : (
@@ -547,10 +511,8 @@ function LandingPage() {
                 <div className="w-14 h-14 rounded-full bg-mint text-mint-ink flex items-center justify-center text-2xl font-extrabold mx-auto">
                   ✓
                 </div>
-                <h4 className="mt-4.5 font-display text-xl font-medium text-ink">Thanks for the idea!</h4>
-                <p className="mt-2.5 text-sm leading-relaxed text-muted">
-                  Your suggestion is in. We genuinely use this feedback to prioritise what we build next.
-                </p>
+                <h4 className="mt-4.5 font-display text-xl font-medium text-ink">{content.suggestModal.successHeading}</h4>
+                <p className="mt-2.5 text-sm leading-relaxed text-muted">{content.suggestModal.successParagraph}</p>
                 <button
                   type="button"
                   onClick={closeSuggest}

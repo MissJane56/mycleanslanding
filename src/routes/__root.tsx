@@ -1,5 +1,6 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 
+import content from '../../content/landing.json'
 import '../styles.css'
 
 export const Route = createRootRoute({
@@ -13,12 +14,11 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'MyCleans — Creating Clean Connections',
+        title: content.meta.title,
       },
       {
         name: 'description',
-        content:
-          'MyCleans is an innovative platform connecting professional cleaners and self-managing BnB hosts, built for trust, transparency, and smooth operations.',
+        content: content.meta.description,
       },
     ],
     links: [

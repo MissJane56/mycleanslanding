@@ -1,0 +1,135 @@
+backend:
+  name: git-gateway
+  repo: MissJane56/mycleanslanding
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/REPLACE_WITH_DECAPBRIDGE_SITE_ID
+  gateway_url: https://gateway.decapbridge.com
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "landing"
+    label: "Landing Page"
+    files:
+      - name: "landing"
+        label: "Landing Page Content"
+        file: "content/landing.json"
+        fields:
+          - label: "Page Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Browser Tab Title", name: "title", widget: "string" }
+              - { label: "Search Engine Description", name: "description", widget: "text" }
+
+          - label: "Top Nav"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "Register Button Label", name: "ctaLabel", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Primary Button Label", name: "ctaPrimary", widget: "string" }
+              - { label: "Secondary Button Label", name: "ctaSecondary", widget: "string" }
+              - { label: "Footnote", name: "footnote", widget: "string" }
+              - label: "'The Missing Piece' Card"
+                name: "card"
+                widget: "object"
+                fields:
+                  - { label: "Icon Image", name: "image", widget: "image" }
+                  - { label: "Icon Alt Text", name: "imageAlt", widget: "string" }
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Paragraph", name: "paragraph", widget: "text" }
+                  - { label: "Highlighted Closing Line", name: "highlight", widget: "string" }
+
+          - label: "For Cleaners Section"
+            name: "cleaners"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Checklist Items"
+                name: "checklist"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+              - { label: "Button Label", name: "cta", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Photo Alt Text", name: "imageAlt", widget: "string" }
+              - label: "Detailed Benefits"
+                name: "details"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "string" }
+
+          - label: "For Hosts Section"
+            name: "hosts"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Photo Alt Text", name: "imageAlt", widget: "string" }
+              - label: "Detailed Benefits"
+                name: "details"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "string" }
+              - { label: "Button Label", name: "cta", widget: "string" }
+
+          - label: "How It Works Section"
+            name: "features"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "index", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+
+          - label: "Register Section"
+            name: "register"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Submit Button Label", name: "submitLabel", widget: "string" }
+              - { label: "Submit Button Label (while submitting)", name: "submittingLabel", widget: "string" }
+              - { label: "Form Footnote", name: "formNote", widget: "string" }
+              - { label: "Success Heading", name: "successHeading", widget: "string" }
+              - { label: "Success Message", name: "successParagraph", widget: "text" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tagline", name: "tagline", widget: "text" }
+              - { label: "Copyright Line", name: "copyright", widget: "string" }
+              - { label: "Contact Email", name: "contactEmail", widget: "string" }
+
+          - label: "'Suggest a Feature' Modal"
+            name: "suggestModal"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - { label: "Submit Button Label", name: "submitLabel", widget: "string" }
+              - { label: "Submit Button Label (while submitting)", name: "submittingLabel", widget: "string" }
+              - { label: "Success Heading", name: "successHeading", widget: "string" }
+              - { label: "Success Message", name: "successParagraph", widget: "text" }

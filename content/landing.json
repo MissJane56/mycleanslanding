@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "MyCleans — Creating Clean Connections",
+    "description": "MyCleans is an innovative platform connecting professional cleaners and self-managing BnB hosts, built for trust, transparency, and smooth operations."
+  },
+  "nav": {
+    "ctaLabel": "Register Interest"
+  },
+  "hero": {
+    "badge": "Launching soon",
+    "heading": "Creating clean connections.",
+    "paragraph": "MyCleans is an innovative platform connecting professional cleaners and self-managing BnB hosts, built for trust, transparency, and smooth operations.",
+    "ctaPrimary": "Register your interest",
+    "ctaSecondary": "Suggest a feature",
+    "footnote": "No spam. Be first to know the moment we launch.",
+    "card": {
+      "image": "/images/puzzle.png",
+      "imageAlt": "Puzzle pieces fitting together",
+      "heading": "The Missing Piece",
+      "paragraph": "There's a grey area between self-managing hosts and cleaners. Hosts need accurate reporting on guest cleanliness to leave correct reviews, and cleaners need clear schedules so they can plan their time efficiently.",
+      "highlight": "MyCleans covers this and more."
+    }
+  },
+  "cleaners": {
+    "eyebrow": "For cleaners",
+    "heading": "Your business, beautifully organised.",
+    "checklist": [
+      "Manage bookings",
+      "Track jobs",
+      "Send reports",
+      "Send invoices",
+      "Accept payments",
+      "Instant messaging",
+      "Seamless workflow"
+    ],
+    "cta": "Get started",
+    "image": "/images/fistbump.jpg",
+    "imageAlt": "A host and cleaner fist-bump, with the MyCleans invoice screen above them",
+    "details": [
+      { "title": "Get paid faster", "desc": "Professional invoicing in-app, no more chasing payments." },
+      { "title": "Show your value", "desc": "Photos and instant condition reports prove your expertise." },
+      { "title": "Save time", "desc": "Streamlined coordination means less admin, more real work." },
+      { "title": "Build trust", "desc": "Transparent documentation justifies your rates." },
+      { "title": "Find quality clients", "desc": "Connect with verified hosts on the directory who are looking for cleaning professionals." },
+      { "title": "Grow your business", "desc": "Build your portfolio and client base with ease." }
+    ]
+  },
+  "hosts": {
+    "eyebrow": "For hosts",
+    "heading": "Operational clarity, without outsourced management.",
+    "paragraph": "Self-managing hosts don't want a full property manager, but the hard parts still need to run smoothly. Get structured systems for coordination, reporting, and invoicing, without giving up control of your revenue.",
+    "image": "/images/hifive.jpg",
+    "imageAlt": "A host and a professional cleaner high-five, with the MyCleans report screen above them",
+    "details": [
+      { "title": "Protect your Superhost status", "desc": "with instant condition reports." },
+      { "title": "Claim damage protection", "desc": "with timestamped photo evidence." },
+      { "title": "Find cleaners fast.", "desc": "Browse the directory and book an emergency clean in minutes." },
+      { "title": "Streamlined invoicing.", "desc": "Approve and pay in one click." }
+    ],
+    "cta": "Get started"
+  },
+  "features": {
+    "eyebrow": "How it works",
+    "heading": "Your workflow, redesigned.",
+    "paragraph": "Three features that make every clean seamless for both sides of the relationship.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Instant Reports",
+        "desc": "Simple, clear reports based on a star rating by the cleaner so hosts know exactly how to review the last guest. Quick for the cleaner too, a few clicks, and it's sent."
+      },
+      {
+        "index": "02",
+        "title": "Easy Invoices",
+        "desc": "When a report is done, an invoice is auto generated for the cleaner to approve in one click. When the host approves, it's paid immediately."
+      },
+      {
+        "index": "03",
+        "title": "The Latest Tech",
+        "desc": "Using Stripe, Calendar Sync to Airbnb and VRBO and a searchable cleaner directory, MyCleans has you covered whether you are an owner, a host, or a cleaner."
+      }
+    ]
+  },
+  "register": {
+    "eyebrow": "Register interest",
+    "heading": "Ready to transform how you work?",
+    "paragraph": "Join the waitlist today. Be first to experience cleaner coordination, instant reporting, and seamless payments, all in one app.",
+    "submitLabel": "Join the waitlist",
+    "submittingLabel": "Joining…",
+    "formNote": "No spam, ever. We'll only email you about the launch.",
+    "successHeading": "You're on the list!",
+    "successParagraph": "We'll be in touch the moment MyCleans launches."
+  },
+  "footer": {
+    "tagline": "Creating clean connections between professional cleaners and self-managing BnB hosts.",
+    "copyright": "© 2026 MyCleans. All rights reserved.",
+    "contactEmail": "hello@mycleans.com.au"
+  },
+  "suggestModal": {
+    "eyebrow": "Shape the app",
+    "heading": "Suggest a feature",
+    "intro": "What would make MyCleans perfect for the way you work? We read every suggestion.",
+    "submitLabel": "Send suggestion",
+    "submittingLabel": "Sending…",
+    "successHeading": "Thanks for the idea!",
+    "successParagraph": "Your suggestion is in. We genuinely use this feedback to prioritise what we build next."
+  }
+}
