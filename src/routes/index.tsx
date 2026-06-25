@@ -58,6 +58,22 @@ function FeatureCard({ index, title, desc }: { index: string; title: string; des
   )
 }
 
+function ProblemColumn({ label, points }: { label: string; points: string[] }) {
+  return (
+    <div>
+      <span className="text-sm font-extrabold tracking-widest uppercase text-primary">{label}</span>
+      <ul className="grid gap-2.5 mt-3 list-none p-0 m-0">
+        {points.map((point) => (
+          <li key={point} className="flex gap-2.5 text-base text-muted">
+            <span className="flex-none text-primary">•</span>
+            {point}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 function LandingPage() {
   const [role, setRole] = useState<'cleaner' | 'host'>('cleaner')
   const [waitlistState, setWaitlistState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
@@ -103,8 +119,11 @@ function LandingPage() {
           <span className="inline-flex items-center justify-center w-7.5 h-7.5 rounded-lg overflow-hidden">
             <img src="/images/logo.png" alt="MyCleans logo" className="block w-full h-full object-cover" />
           </span>
-          <span>
-            My<span className="text-primary">Cleans</span>
+          <span className="flex flex-col leading-tight">
+            <span>
+              My<span className="text-primary">Cleans</span>
+            </span>
+            <span className="text-[11px] font-medium tracking-wide text-muted">{content.nav.tagline}</span>
           </span>
         </a>
         <div className="hidden md:flex items-center gap-7 text-sm font-semibold">
@@ -132,23 +151,28 @@ function LandingPage() {
               <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink">
                 {content.hero.heading}
               </h1>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-medium tracking-[-0.01em] text-muted">
+                {content.hero.subheading}
+              </h2>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
-              <div className="flex flex-wrap gap-3.5 mt-8 justify-center">
-                <a
-                  href="#register"
-                  className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
-                >
-                  {content.hero.ctaPrimary}
-                </a>
-                <button
-                  type="button"
-                  onClick={() => setShowSuggest(true)}
-                  className="inline-flex items-center px-7 py-4 rounded bg-transparent border-[1.5px] border-ink text-ink text-base font-bold cursor-pointer hover:bg-black/5"
-                >
-                  {content.hero.ctaSecondary}
-                </button>
+            </div>
+            <div className="w-full max-w-[640px] mx-auto">
+              <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
+                <div className="h-1.5 bg-primary" />
+                <div className="p-8 md:p-10">
+                  <h2 className="font-display text-2xl font-medium tracking-[-0.02em] text-ink text-center">
+                    {content.problem.heading}
+                  </h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-7 text-left">
+                    <ProblemColumn label={content.problem.hostsLabel} points={content.problem.hostsPoints} />
+                    <ProblemColumn label={content.problem.cleanersLabel} points={content.problem.cleanersPoints} />
+                  </div>
+                  <div className="mt-8 pt-7 border-t border-line text-center">
+                    <div className="font-display text-xl font-semibold text-ink">{content.problem.closingBrand}</div>
+                    <p className="mt-1 text-base text-muted">{content.problem.closingTagline}</p>
+                  </div>
+                </div>
               </div>
-              <p className="mt-4 text-sm text-muted">{content.hero.footnote}</p>
             </div>
             <div className="w-full max-w-[480px]">
               <div className="relative rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
@@ -213,16 +237,16 @@ function LandingPage() {
             <div className="h-1.5 bg-primary" />
             <div className="p-10 text-center">
               <p className="mx-auto text-lg leading-relaxed text-ink max-w-[62ch]">
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">MyCleans</span>{' '}
+                <span className="font-display italic text-xl md:text-2xl font-semibold">MyCleans</span>{' '}
                 makes it super easy to{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">report</span> on
+                <span className="font-display italic text-xl md:text-2xl font-semibold">report</span> on
                 the property condition with just a few simple yes/no questions and a couple of{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">photos</span>.
+                <span className="font-display italic text-xl md:text-2xl font-semibold">photos</span>.
                 Hosts will see{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">exactly</span>{' '}
+                <span className="font-display italic text-xl md:text-2xl font-semibold">exactly</span>{' '}
                 what you're dealing with before you've even left the property, and realise that
                 you are not just cleaning, you're{' '}
-                <span className="font-display italic text-2xl md:text-3xl font-semibold">
+                <span className="font-display italic text-xl md:text-2xl font-semibold">
                   providing critical intelligence
                 </span>
                 .
@@ -385,6 +409,14 @@ function LandingPage() {
               </p>
             </div>
           )}
+
+          <button
+            type="button"
+            onClick={() => setShowSuggest(true)}
+            className="inline-flex items-center mt-7 px-7 py-4 rounded bg-transparent border-[1.5px] border-ink text-ink text-base font-bold cursor-pointer hover:bg-black/5"
+          >
+            {content.register.suggestCta}
+          </button>
         </div>
       </section>
 
