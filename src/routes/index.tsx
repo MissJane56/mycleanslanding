@@ -155,7 +155,7 @@ function LandingPage() {
             <div className="w-full max-w-[480px]">
               <div className="relative rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
-                <div className="px-9 py-10 text-center">
+                <div className="px-9 pt-10 pb-5 text-center">
                   <img src="/images/puzzle.png" alt="Puzzle pieces fitting together" className="block w-13 h-13 mx-auto" />
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
                     The Missing Piece
@@ -186,9 +186,10 @@ function LandingPage() {
               <div className="grid gap-2.5 mt-5">
                 <CheckItem>Manage bookings</CheckItem>
                 <CheckItem>Track jobs</CheckItem>
+                <CheckItem>Send reports</CheckItem>
                 <CheckItem>Send invoices</CheckItem>
                 <CheckItem>Accept payments</CheckItem>
-                <CheckItem>Communicate with clients</CheckItem>
+                <CheckItem>Instant messaging</CheckItem>
                 <CheckItem>Seamless workflow</CheckItem>
               </div>
               <a
@@ -221,14 +222,25 @@ function LandingPage() {
             <CheckLine title="Grow your business" desc="Build your portfolio and client base with ease." />
           </div>
 
-          <div className="mt-14 p-10 rounded bg-surface border border-line text-center">
-            <p className="mx-auto font-display text-xl md:text-2xl leading-relaxed font-medium text-ink max-w-[62ch]">
-              MyCleans makes it easy to document the property condition with a few
-              simple yes/no questions and the opportunity to take some photographs.
-              Hosts/owners will see exactly what you're dealing with and realise
-              that you are not just cleaning, you are providing critical
-              intelligence.
-            </p>
+          <div className="mt-14 mx-auto max-w-[800px] rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
+            <div className="h-1.5 bg-primary" />
+            <div className="p-10 text-center">
+              <p className="mx-auto text-lg leading-relaxed text-ink max-w-[62ch]">
+                <span className="font-display italic text-2xl md:text-3xl font-semibold">MyCleans</span>{' '}
+                makes it super easy to{' '}
+                <span className="font-display italic text-2xl md:text-3xl font-semibold">report</span> on
+                the property condition with just a few simple yes/no questions and a couple of{' '}
+                <span className="font-display italic text-2xl md:text-3xl font-semibold">photos</span>.
+                Hosts will see{' '}
+                <span className="font-display italic text-2xl md:text-3xl font-semibold">exactly</span>{' '}
+                what you're dealing with before you've even left the property, and realise that
+                you are not just cleaning, you're{' '}
+                <span className="font-display italic text-2xl md:text-3xl font-semibold">
+                  providing critical intelligence
+                </span>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </section>
