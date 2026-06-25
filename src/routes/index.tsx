@@ -137,7 +137,7 @@ function LandingPage() {
         <div className="hidden md:flex items-center gap-7 text-sm font-semibold">
           <a href="#cleaners" className="text-ink/80 hover:text-ink no-underline">For Cleaners</a>
           <a href="#hosts" className="text-ink/80 hover:text-ink no-underline">For Hosts</a>
-          <a href="#features" className="text-ink/80 hover:text-ink no-underline">Features</a>
+          <a href="#features" className="text-ink/80 hover:text-ink no-underline">How It Works</a>
         </div>
         <a
           href="#register"
