@@ -62,12 +62,11 @@
       "image": "/images/puzzle.png",
       "imageAlt": "Puzzle pieces fitting together",
       "heading": "The Missing Piece",
-      "paragraph": "There's a grey area between self-managing hosts and cleaners. Hosts need accurate reporting on guest cleanliness to leave correct reviews, and cleaners need clear schedules so they can plan their time efficiently.",
-      "highlight": "MyCleans covers this and more."
+      "paragraph": "There's a glaring operational gap between self-managing hosts and cleaners. Hosts need accurate reporting on guest cleanliness to leave correct reviews, and cleaners need clear schedules so they can plan their time efficiently."
     }
   },
   "problem": {
-    "heading": "The Problem",
+    "solutionLabel": "The Solution",
     "hostsLabel": "Hosts",
     "hostsPoints": [
       "Different platforms for messaging",

@@ -72,13 +72,12 @@ collections:
                   - { label: "Icon Alt Text", name: "imageAlt", widget: "string" }
                   - { label: "Heading", name: "heading", widget: "string" }
                   - { label: "Paragraph", name: "paragraph", widget: "text" }
-                  - { label: "Highlighted Closing Line", name: "highlight", widget: "string" }
 
-          - label: "'The Problem' Box"
+          - label: "Problem & Solution (inside Missing Piece card)"
             name: "problem"
             widget: "object"
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "'Solution' Eyebrow Label", name: "solutionLabel", widget: "string" }
               - { label: "Hosts Column Label", name: "hostsLabel", widget: "string" }
               - label: "Hosts Pain Points"
                 name: "hostsPoints"
