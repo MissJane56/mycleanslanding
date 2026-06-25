@@ -155,7 +155,7 @@ function LandingPage() {
             <div className="w-full max-w-[480px]">
               <div className="relative rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
-                <div className="px-9 py-10 text-center">
+                <div className="px-9 pt-10 pb-5 text-center">
                   <img src="/images/puzzle.png" alt="Puzzle pieces fitting together" className="block w-13 h-13 mx-auto" />
                   <h3 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
                     The Missing Piece
