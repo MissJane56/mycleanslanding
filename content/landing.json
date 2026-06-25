@@ -14,7 +14,7 @@
   },
   "meta": {
     "title": "MyCleans - Creating Clean Connections",
-    "description": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, reporting, invoicing and payments."
+    "description": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, scheduling, reporting, invoicing and payments. MyCleans is an innovative web-based app free for cleaners and self-managing BnB hosts with only one property. A paid subscription is optional for premium features."
   },
   "suggestModal": {
     "eyebrow": "Shape the app",
@@ -54,7 +54,7 @@
   "hero": {
     "badge": "Launching soon",
     "heading": "Creating clean connections.",
-    "paragraph": "MyCleans is an innovative platform connecting professional cleaners and self-managing BnB hosts, built for trust, transparency, and smooth operations.",
+    "paragraph": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, job scheduling, reporting, invoicing and payments.",
     "ctaPrimary": "Register your interest",
     "ctaSecondary": "Suggest a feature",
     "footnote": "No spam. Be first to know the moment we launch.",
