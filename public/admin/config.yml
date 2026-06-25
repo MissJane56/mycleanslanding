@@ -62,6 +62,7 @@ collections:
             fields:
               - { label: "Badge Text", name: "badge", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }
               - label: "'The Missing Piece' Card"
                 name: "card"

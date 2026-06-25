@@ -151,6 +151,9 @@ function LandingPage() {
               <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink">
                 {content.hero.heading}
               </h1>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-medium tracking-[-0.01em] text-muted">
+                {content.hero.subheading}
+              </h2>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
             </div>
             <div className="w-full max-w-[640px] mx-auto">
