@@ -60,7 +60,8 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Badge Text (shown once the launch date has passed)", name: "badge", widget: "string" }
+              - { label: "Launch Date (badge shows 'Launching <date> · N days to go' until this day)", name: "launchDate", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Subheading", name: "subheading", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }

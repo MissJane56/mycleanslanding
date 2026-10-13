@@ -41,11 +41,23 @@ Confirm which of these accounts exist and who posts. The plan works with just a 
 
 - [ ] Decide who posts, and where. Schedule T-14 to T-11 in advance.
 - [ ] Make a countdown graphic template (logo + "14 DAYS TO GO"). Duplicate it daily and change only the number.
-- [ ] Create the tracked link for each channel (e.g. `?utm_source=instagram`, `facebook-group`, `linkedin`, `email`).
+- [ ] Use a tracked link on every channel (see **Tracked links** below). The waitlist form records the `utm_source` of each sign-up.
 - [ ] Record a 30 to 45 second screen capture of the report → invoice flow (needed for T-9, and reusable on T-12 and launch day).
 - [ ] Write the founder story for T-10 (see the prompt there).
 - [ ] Write down today's waitlist total. That's your baseline for the fortnight.
 - [ ] Draft the T-7 and T-2 emails and the launch-day email.
+
+### Tracked links
+
+Add `?utm_source=<value>` to the site link on each channel. These are the values the plan assumes:
+
+| Where the link goes | Link |
+|---|---|
+| Instagram bio / stories | `https://mycleans.com.au/?utm_source=instagram` |
+| Facebook page | `https://mycleans.com.au/?utm_source=facebook` |
+| Facebook group posts | `https://mycleans.com.au/?utm_source=facebook-group` |
+| LinkedIn | `https://mycleans.com.au/?utm_source=linkedin` |
+| Waitlist emails | `https://mycleans.com.au/?utm_source=email` |
 
 ---
 
@@ -241,7 +253,7 @@ Don't use fake urgency here ("spots running out", "waitlist closing") unless it'
 |---|---|
 | Morning | **Email #3** to the waitlist: "MyCleans is live." Give one big button to get started. |
 | Morning | Launch post on every channel: logo + "We're live." One line each for cleaners and hosts, link to the app. |
-| Morning | Update the site: change the hero badge (`hero.badge` in `content/landing.json`) and the footer "Launching soon" label (hard-coded in `src/routes/index.tsx`), and point the main buttons to the app. |
+| Morning | Update the site: the hero badge already reads "Launching today". Point the main buttons to the app, and change the footer "Launching soon" label (hard-coded in `src/routes/index.tsx`). Also set `hero.badge` to something like "Now live" before launch day ends, because the badge falls back to that text from 29 Oct. |
 | Midday | Share the T-9 screen recording again as a "here's how it works" explainer. |
 | All day | Reply to every comment and message. Reshare anyone who posts about it. |
 | Evening | Thank-you post, with real numbers only if they're good and true. |
@@ -264,14 +276,14 @@ Check these once a day, at the same time:
 
 | Metric | Where | Why |
 |---|---|---|
-| Waitlist sign-ups (total, and cleaner vs host) | Netlify → Forms → `waitlist` (the form has a `role` field) | The one number that matters |
+| Waitlist sign-ups (total, by cleaner vs host, and by channel) | Netlify → Forms → `waitlist` (fields: `role`, `source`, `name`, `email`) | The one number that matters |
 | Link clicks by channel | UTM links in your analytics | Tells you which channels deserve the effort |
 | Email open/click rate | Email tool | T-7 vs T-2 shows whether the list stays warm |
 | Comments and DMs | Each platform | T-4 is the test |
 
 Set targets on T-14 from your prep-day baseline. Don't copy generic benchmarks.
 
-**Note:** the waitlist form doesn't currently record where a sign-up came from (it only captures `role`, `name` and `email`), so channel attribution relies on analytics, not the form. A hidden `source` field filled from the UTM would fix that.
+**How `source` is filled in:** the waitlist form has a hidden `source` field. It takes the `utm_source` value from the link the visitor arrived on. If there's no `utm_source`, it falls back to the referring site's hostname (e.g. `l.instagram.com`), and then to `direct`. Anyone who lands without a tracked link and without a referrer shows as `direct`, so use the tracked links below on everything you post.
 
 ---
 
@@ -282,4 +294,4 @@ Set targets on T-14 from your prep-day baseline. Don't copy generic benchmarks.
 3. **Screen recording** of the report → invoice flow. Needs a working build by T-9 (Mon 19 Oct).
 4. **What "launch" means for a waitlister:** the URL and the first thing they do. Write it before Email #3.
 5. **Premium subscription wording.** Only the "optional paid subscription" line is public so far.
-6. **Site changes for launch day:** swap "Launching soon", and consider an on-page "Launching 28 October" label during the countdown.
+6. **Site changes for launch day:** the hero badge now counts down automatically ("Launching 28 October · N days to go"). If the date moves, change `hero.launchDate` in `content/landing.json` (or the Launch Date field in the CMS). On launch day, swap the footer "Launching soon" label and set `hero.badge` as described in the launch-day table.
