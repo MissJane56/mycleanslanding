@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import content from '../../content/landing.json'
 
@@ -16,6 +16,38 @@ async function submitNetlifyForm(form: HTMLFormElement) {
     body: body.toString(),
   })
   if (!res.ok) throw new Error('Form submission failed')
+}
+
+function detectSource() {
+  const utm = new URLSearchParams(window.location.search).get('utm_source')?.trim()
+  if (utm) return utm.slice(0, 100)
+  try {
+    const host = new URL(document.referrer).hostname
+    if (host && host !== window.location.hostname) return host
+  } catch {
+    return 'direct'
+  }
+  return 'direct'
+}
+
+function parseLaunchDate(launchDate: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(launchDate)
+  return match ? new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3])) : null
+}
+
+function daysUntil(target: Date) {
+  const now = new Date()
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+  return Math.round((target.getTime() - today.getTime()) / 86_400_000)
+}
+
+function launchBadgeText(launchDate: string, daysToGo: number | null, fallback: string) {
+  const target = parseLaunchDate(launchDate)
+  if (!target || (daysToGo !== null && daysToGo < 0)) return fallback
+  if (daysToGo === 0) return 'Launching today'
+  const dateLabel = target.toLocaleDateString('en-AU', { day: 'numeric', month: 'long' })
+  if (daysToGo === null) return `Launching ${dateLabel}`
+  return `Launching ${dateLabel} · ${daysToGo} ${daysToGo === 1 ? 'day' : 'days'} to go`
 }
 
 function Check() {
@@ -86,6 +118,14 @@ function LandingPage() {
   const [role, setRole] = useState<'cleaner' | 'host'>('cleaner')
   const [waitlistState, setWaitlistState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
   const [waitlistName, setWaitlistName] = useState('')
+  const [source, setSource] = useState('direct')
+  const [daysToGo, setDaysToGo] = useState<number | null>(null)
+
+  useEffect(() => {
+    setSource(detectSource())
+    const target = parseLaunchDate(content.hero.launchDate)
+    if (target) setDaysToGo(daysUntil(target))
+  }, [])
 
   const [showSuggest, setShowSuggest] = useState(false)
   const [suggestState, setSuggestState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
@@ -154,7 +194,7 @@ function LandingPage() {
             <div className="flex-1 max-w-[620px] mx-auto">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mint text-mint-ink text-xs font-bold tracking-wide">
                 <span className="w-1.5 h-1.5 rounded-full bg-mint-ink inline-block" />
-                {content.hero.badge}
+                {launchBadgeText(content.hero.launchDate, daysToGo, content.hero.badge)}
               </span>
               <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink">
                 {content.hero.heading}
@@ -336,6 +376,7 @@ function LandingPage() {
                 </label>
               </p>
               <input type="hidden" name="role" value={role} />
+              <input type="hidden" name="source" value={source} />
 
               <label className="block text-sm font-bold text-ink mb-2">I am a…</label>
               <div className="grid grid-cols-2 gap-2.5 mb-5">
