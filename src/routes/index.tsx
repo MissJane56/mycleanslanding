@@ -171,17 +171,17 @@ function LandingPage() {
             <span>
               My<span className="text-primary">Cleans</span>
             </span>
-            <span className="text-[11px] font-medium tracking-wide text-muted">{content.nav.tagline}</span>
+            <span className="text-xs font-medium tracking-wide text-muted md:whitespace-nowrap">{content.nav.tagline}</span>
           </span>
         </a>
-        <div className="hidden md:flex items-center gap-7 text-sm font-semibold">
+        <div className="hidden lg:flex items-center gap-7 text-sm font-semibold whitespace-nowrap">
           <a href="#cleaners" className="text-ink/80 hover:text-ink no-underline">For Cleaners</a>
           <a href="#hosts" className="text-ink/80 hover:text-ink no-underline">For Hosts</a>
           <a href="#features" className="text-ink/80 hover:text-ink no-underline">How It Works</a>
         </div>
         <a
           href="#register"
-          className="inline-flex items-center px-5 py-2.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
+          className="inline-flex items-center px-5 py-2.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95 md:whitespace-nowrap"
         >
           {content.nav.ctaLabel}
         </a>
