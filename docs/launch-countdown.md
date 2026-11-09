@@ -390,20 +390,19 @@ Check these once a day, at the same time:
 
 ## Site changes
 
-**Done:** the register heading now reads "Become a Beta Tester and get 2 years of free premium access!"
+The whole site is now beta-first. These changes are built and checked, and go live when they're published.
 
-**Still to do.** The rest of the page still describes a launch, which conflicts with the offer: someone who taps "Apply for the beta" lands on "Join the waitlist" and "Launching soon". In order of urgency:
+- **Hero:** "Test MyCleans free for two months", then "Then get 2 years of free premium access when we launch." The badge counts down ("Beta opens 30 November · N days to go") and falls back to "Free beta · Launching soon" after 30 Nov. Buttons: "Apply for the beta" and "How the beta works".
+- **New "The Beta" section** after the hero: three offer cards (free during the beta, 2 years of free premium, shape what we build), the apply → test for about two months → official launch steps, and the "what we ask" line.
+- **Calls to action** all say "Join the Beta" or "Apply for the beta". The cleaner and host buttons pre-select that role on the form.
+- **Application form** wording is beta-first. It still records `role`, `source`, `name` and `email`, so tracked links and the cleaner/host split keep working.
+- **Kept as they were:** "Suggest a feature" and the "Launching soon" footer label.
+- **Not changed:** the feature and benefit copy in the cleaners, hosts and "What you'll test" sections. Check it against what's actually in the beta build.
+- **Editable in the CMS** (`/admin`): the countdown date and prefix, hero buttons and every field in The Beta section.
 
-| Where | Live now | Proposed |
-|---|---|---|
-| Hero badge | "Launching soon". The countdown date (28 Oct) has passed, so it shows the fallback text. | "Beta opens 30 November · N days to go". Set `hero.launchDate` to `2026-11-30`. The word "Launching" is hard-coded, so this needs a small code change to make it editable. After beta day it falls back to `hero.badge`, which should read "Free beta · Testers wanted". |
-| Nav button | "Register Interest" | "Join the Beta" |
-| Register paragraph | "Join the waitlist today. Be first to experience..." | "Use MyCleans free during the beta, then get 2 years of free premium access when we go public. Be one of the first cleaners and hosts to try it." |
-| Submit button | "Join the waitlist" | "Apply for the beta" |
-| Form note | "We'll only email you about the launch." | "No spam, ever. We'll only email you about the beta and the launch." |
-| Success message | "We'll be in touch the moment MyCleans launches." | "Thanks for applying. We'll email you about the beta." |
-| Footer label | "Launching soon" | "Beta opens 30 November" |
-| Search description | Describes a finished product | Add "Join the free beta." |
+**If the beta date moves**, change two things: the countdown date in the Hero fields, and the "The beta opens 30 November" line in step 2 of The Beta section. They're separate fields.
+
+**At the official launch**, the site needs another pass: swap the hero and The Beta section for launch copy, and replace the "Launching soon" footer label.
 
 Optional: a separate beta form that also asks how many properties or clients someone has, which helps you choose who gets in first. Until then, applications arrive in the existing `waitlist` form.
 
@@ -417,6 +416,6 @@ Optional: a separate beta form that also asks how many properties or clients som
 4. **Screen recording** of the report → invoice flow, needed by T-9 (Sat 21 Nov).
 5. **Which features are in the beta build**, so the ⚠ posts are accurate.
 6. **How invites work** on 30 Nov.
-7. **Site changes** above: say the word and they can be applied and published.
+7. **Publish the site changes** above (they're ready).
 8. **Social accounts:** which exist, and who posts.
 9. **Reset note:** whether to send it depends on whether the 28 October date went out.

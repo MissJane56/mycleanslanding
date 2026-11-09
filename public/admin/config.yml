@@ -61,10 +61,13 @@ collections:
             widget: "object"
             fields:
               - { label: "Badge Text (shown once the launch date has passed)", name: "badge", widget: "string" }
-              - { label: "Launch Date (badge shows 'Launching <date> · N days to go' until this day)", name: "launchDate", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Countdown Date (badge shows '<Prefix> <date> · N days to go' until this day)", name: "launchDate", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Countdown Prefix (e.g. Beta opens)", name: "launchPrefix", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Subheading", name: "subheading", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Main Button Label", name: "cta", widget: "string" }
+              - { label: "Second Button Label (scrolls to The Beta)", name: "ctaSecondary", widget: "string" }
               - label: "'The Missing Piece' Card"
                 name: "card"
                 widget: "object"
@@ -73,6 +76,30 @@ collections:
                   - { label: "Icon Alt Text", name: "imageAlt", widget: "string" }
                   - { label: "Heading", name: "heading", widget: "string" }
                   - { label: "Paragraph", name: "paragraph", widget: "text" }
+
+          - label: "The Beta Section"
+            name: "beta"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Offer Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "index", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Steps Heading", name: "stepsHeading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+              - { label: "'What we ask' Line", name: "ask", widget: "string" }
+              - { label: "Button Label", name: "cta", widget: "string" }
 
           - label: "Problem & Solution (inside Missing Piece card)"
             name: "problem"

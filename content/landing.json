@@ -1,22 +1,22 @@
 {
   "nav": {
     "tagline": "Creating Clean Connections",
-    "ctaLabel": "Register Interest"
+    "ctaLabel": "Join the Beta"
   },
   "register": {
-    "eyebrow": "Register interest",
+    "eyebrow": "Beta applications",
     "heading": "Become a Beta Tester and get 2 years of free premium access!",
-    "paragraph": "Join the waitlist today. Be first to experience cleaner coordination, instant reporting, and seamless payments, all in one app.",
-    "submitLabel": "Join the waitlist",
-    "submittingLabel": "Joining…",
-    "formNote": "No spam, ever. We'll only email you about the launch.",
-    "successHeading": "You're on the list!",
-    "successParagraph": "We'll be in touch the moment MyCleans launches.",
+    "paragraph": "Apply to join the free beta. Cleaners and hosts are both welcome, and testers get 2 years of free premium access when we launch officially.",
+    "submitLabel": "Apply for the beta",
+    "submittingLabel": "Sending…",
+    "formNote": "No spam, ever. We'll only email you about the beta and our official launch.",
+    "successHeading": "You're on the beta list!",
+    "successParagraph": "We'll be in touch about getting started.",
     "suggestCta": "Suggest a feature"
   },
   "meta": {
-    "title": "MyCleans - Creating Clean Connections",
-    "description": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, scheduling, reporting, invoicing and payments. MyCleans is an innovative web-based app free for cleaners and self-managing BnB hosts with only one property. A paid subscription is optional for premium features."
+    "title": "MyCleans - Join the Free Beta",
+    "description": "Join the free MyCleans beta. Professional cleaners and self-managing short-stay hosts test the app for about two months, then get 2 years of free premium access when we launch officially. MyCleans streamlines communication, scheduling, reporting, invoicing and payments between cleaners and hosts."
   },
   "suggestModal": {
     "eyebrow": "Shape the app",
@@ -51,20 +51,62 @@
         "desc": "Approve and pay in one click."
       }
     ],
-    "cta": "Get started"
+    "cta": "Join the beta as a host"
   },
   "hero": {
-    "badge": "Launching soon",
-    "launchDate": "2026-10-28",
-    "heading": "MyCleans",
-    "subheading": "The platform for cleaners and short-stay hosts",
-    "paragraph": "Connecting professional cleaners and self-managing short-stay hosts to streamline communication, job scheduling, reporting, invoicing and payments.",
+    "badge": "Free beta · Launching soon",
+    "launchDate": "2026-11-30",
+    "launchPrefix": "Beta opens",
+    "heading": "Test MyCleans free for two months",
+    "subheading": "Then get 2 years of free premium access when we launch.",
+    "paragraph": "We're opening a beta for professional cleaners and self-managing short-stay hosts. Use MyCleans on real jobs, tell us what works, and help shape the platform before it launches to everyone.",
+    "cta": "Apply for the beta",
+    "ctaSecondary": "How the beta works",
     "card": {
       "image": "/images/puzzle.png",
       "imageAlt": "Puzzle pieces fitting together",
       "heading": "The Missing Piece",
       "paragraph": "There's a glaring operational gap between self-managing hosts and cleaners. Hosts need accurate reporting on guest cleanliness to leave correct reviews, and cleaners need clear schedules so they can plan their time efficiently."
     }
+  },
+  "beta": {
+    "eyebrow": "The beta",
+    "heading": "Two months to test it. Two years of premium.",
+    "paragraph": "We're inviting cleaners and hosts to use MyCleans on real jobs for about two months before we launch to everyone. Here's the deal.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Free during the beta",
+        "desc": "Use MyCleans on your real jobs at no cost for the whole beta."
+      },
+      {
+        "index": "02",
+        "title": "2 years of free premium",
+        "desc": "Beta testers get 2 years of free premium access, starting when we launch officially."
+      },
+      {
+        "index": "03",
+        "title": "Shape what we build",
+        "desc": "Your feedback decides what we fix and build next. We read every suggestion."
+      }
+    ],
+    "stepsHeading": "What happens next",
+    "steps": [
+      {
+        "title": "Apply",
+        "desc": "Join the beta list. Cleaners and hosts are both welcome."
+      },
+      {
+        "title": "Test for about two months",
+        "desc": "The beta opens 30 November. Use MyCleans on real jobs and tell us what you think."
+      },
+      {
+        "title": "We launch officially",
+        "desc": "Then MyCleans opens to everyone, and your 2 years of free premium begin."
+      }
+    ],
+    "ask": "What we ask: use it on real jobs and tell us what works and what doesn't.",
+    "cta": "Apply for the beta"
   },
   "problem": {
     "solutionLabel": "The Solution",
@@ -91,9 +133,9 @@
     "contactEmail": "hello@mycleans.com.au"
   },
   "features": {
-    "eyebrow": "How it works",
-    "heading": "Your workflow, redesigned.",
-    "paragraph": "Three features that make every clean seamless for both sides of the relationship.",
+    "eyebrow": "What you'll test",
+    "heading": "Three features to put through their paces.",
+    "paragraph": "Three features that make every clean seamless for both sides. As a beta tester, you'll be the first to use them on real jobs.",
     "cards": [
       {
         "index": "01",
@@ -124,7 +166,7 @@
       "Instant messaging",
       "Seamless workflow"
     ],
-    "cta": "Get started",
+    "cta": "Join the beta as a cleaner",
     "image": "/images/fistbump.jpg",
     "imageAlt": "A professional cleaner with cleaning supplies, ready to work",
     "details": [
