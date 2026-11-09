@@ -2,6 +2,21 @@ import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 
 import content from '../../content/landing.json'
+import privacy from '../../content/legal/privacy-policy.json'
+import terms from '../../content/legal/beta-terms.json'
+
+const termsAgreement = `Beta Terms ${terms.updated}; Privacy Policy ${privacy.updated}`
+
+function TermsApply() {
+  return (
+    <p className="mt-4 mb-0 text-sm text-muted">
+      Terms apply.{' '}
+      <a href="/betaterms" className="underline hover:text-ink">
+        Read the Beta Terms
+      </a>
+    </p>
+  )
+}
 
 export const Route = createFileRoute('/')({
   component: LandingPage,
@@ -218,6 +233,7 @@ function LandingPage() {
                   {content.hero.ctaSecondary}
                 </a>
               </div>
+              <TermsApply />
             </div>
             <div className="w-full max-w-[960px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
@@ -294,6 +310,7 @@ function LandingPage() {
             >
               {content.beta.cta}
             </a>
+            <TermsApply />
           </div>
         </div>
       </section>
@@ -483,6 +500,21 @@ function LandingPage() {
                 className="w-full px-3.5 py-3.5 rounded border border-line bg-surface text-base text-ink outline-none focus:border-primary"
               />
 
+              <label className="flex items-start gap-3 mt-5 text-sm leading-relaxed text-ink cursor-pointer">
+                <input type="checkbox" name="terms" value={termsAgreement} required className="flex-none w-5 h-5 mt-0.5 accent-primary" />
+                <span>
+                  I agree to the MyCleans{' '}
+                  <a href="/betaterms" target="_blank" rel="noreferrer" className="underline">
+                    Beta Terms
+                  </a>{' '}
+                  and{' '}
+                  <a href="/privacypolicy" target="_blank" rel="noreferrer" className="underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </span>
+              </label>
+
               {waitlistState === 'error' && (
                 <p className="mt-2.5 text-sm font-semibold text-[#c0392b]">
                   Something went wrong — please try again, or email{' '}
@@ -500,7 +532,13 @@ function LandingPage() {
               >
                 {waitlistState === 'submitting' ? content.register.submittingLabel : content.register.submitLabel}
               </button>
-              <p className="mt-3.5 text-center text-xs text-muted">{content.register.formNote}</p>
+              <p className="mt-3.5 mb-0 text-center text-xs text-muted">
+                {content.register.formNote} See our{' '}
+                <a href="/privacypolicy" target="_blank" rel="noreferrer" className="underline">
+                  Privacy Policy
+                </a>
+                .
+              </p>
             </form>
           ) : (
             <div className="mt-9 mx-auto max-w-[520px] bg-page border border-line rounded p-10">
@@ -550,6 +588,11 @@ function LandingPage() {
               <span className="font-bold text-ink mb-0.5">Get started</span>
               <a href="#register" className="text-muted no-underline hover:text-ink">{content.nav.ctaLabel}</a>
               <span className="text-primary font-bold">Launching soon</span>
+            </div>
+            <div className="grid gap-2.5 text-sm">
+              <span className="font-bold text-ink mb-0.5">Legal</span>
+              <a href="/betaterms" className="text-muted no-underline hover:text-ink">Beta Terms</a>
+              <a href="/privacypolicy" className="text-muted no-underline hover:text-ink">Privacy Policy</a>
             </div>
             <div className="grid gap-2.5 text-sm">
               <span className="font-bold text-ink mb-0.5">Contact</span>
@@ -630,6 +673,13 @@ function LandingPage() {
                   placeholder="you@email.com"
                   className="w-full px-3.5 py-3.5 rounded border border-line bg-surface text-base text-ink outline-none focus:border-primary box-border"
                 />
+                <p className="mt-2 mb-0 text-sm text-muted">
+                  Your email is optional. We'll only use it to reply to you. See our{' '}
+                  <a href="/privacypolicy" target="_blank" rel="noreferrer" className="underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
                 {suggestState === 'error' && (
                   <p className="mt-2.5 text-sm font-semibold text-[#c0392b]">
                     That didn't go through — please try again.

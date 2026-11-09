@@ -32,7 +32,7 @@ In return, we ask them to use it on real jobs and tell us what works and what do
 The date and the start of the 2 years are settled. These are still open, and every post makes the offer, so settle them first.
 
 1. **What "premium" includes.** The site says MyCleans is free for cleaners and for hosts with one property, with an optional paid subscription for premium features. The offer is only as strong as that list, so write one sentence on what premium covers. The FAQ at T-3 has a slot for it.
-2. **Beta terms and privacy policy.** Drafts are in `docs/beta-terms.md` and `docs/privacy-policy.md`. They need your decisions on the bracketed items and a lawyer's review before you publish them. Then link them from the application form and the site footer, and add "Terms apply" wherever you state the offer. Keep a list of every tester's email. It's how you'll honour the offer later.
+2. **Beta terms and privacy policy.** Both are published (`/betaterms` and `/privacypolicy`) and linked from the footer, the application form and under the offer. They're still worth a lawyer's review (`docs/legal.md` lists what to ask). In posts, add "Terms apply" with a link wherever you state the offer. Keep a list of every tester's email. It's how you'll honour the offer later.
 3. **Spots.** Say "limited spots" or give a number only if there's a real cap. Otherwise leave it out.
 4. **Features in the beta build.** Posts that mention a feature are tagged ⚠. Only post them if the feature works in the beta. The cleaner directory is left out of this plan because it will be thin until more people join.
 5. **How invites work.** Does everyone who applies get in on 30 Nov, or in batches? The T-1 and beta-day copy needs the answer.
@@ -74,12 +74,16 @@ Confirm which accounts exist and who posts. The plan works with just a page + em
 ## Prep week: Mon 9 to Sun 15 November
 
 - [ ] Settle the "Confirm before posting" list above.
-- [ ] Finish and publish the beta terms (`docs/beta-terms.md`) and the privacy policy (`docs/privacy-policy.md`), then link both from the application form and the site footer.
+- [ ] Have a lawyer review the published beta terms and privacy policy (`docs/legal.md` lists what to ask).
 - [ ] Write down today's waitlist total. That's your baseline.
 - [ ] Make a countdown graphic template ("BETA OPENS IN 14 DAYS"). Change only the number each day.
 - [ ] Record a 30 to 45 second screen capture of the report → invoice flow, needed by T-9 (Sat 21 Nov).
 - [ ] Write the founder story for T-10.
 - [ ] Draft the emails (T-14 has a full draft) and schedule posts for T-14 to T-11.
+
+### Legal links for emails
+
+Footer of every waitlist email (the unsubscribe link is required): "You're receiving this because you joined the MyCleans waitlist. Beta Terms: https://mycleans.com.au/betaterms · Privacy Policy: https://mycleans.com.au/privacypolicy · Unsubscribe: [link]." In the beta-day invitation: "By using the beta you agree to the Beta Terms: https://mycleans.com.au/betaterms."
 
 ### Tracked links
 
@@ -372,6 +376,7 @@ The whole site is now beta-first, and it's live (published 9 Nov).
 - **New "The Beta" section** after the hero: three offer cards (free during the beta, 2 years of free premium, shape what we build), the apply → test for about two months → official launch steps, and the "what we ask" line.
 - **Calls to action** all say "Join the Beta" or "Apply for the beta". The cleaner and host buttons pre-select that role on the form.
 - **Application form** wording is beta-first. It still records `role`, `source`, `name` and `email`, so tracked links and the cleaner/host split keep working.
+- **Legal pages:** Beta Terms (`/betaterms`) and Privacy Policy (`/privacypolicy`), a Legal column in the footer, "Terms apply" under the offer, and a required "I agree" checkbox on the application form. The form records which version each person agreed to.
 - **Kept as they were:** "Suggest a feature" and the "Launching soon" footer label.
 - **Not changed:** the feature and benefit copy in the cleaners, hosts and "What you'll test" sections. Check it against what's actually in the beta build.
 - **Editable in the CMS** (`/admin`): the countdown date and prefix, hero buttons and every field in The Beta section.
@@ -387,7 +392,7 @@ Optional: a separate beta form that also asks how many properties or clients som
 ## Open items
 
 1. **What premium includes**, and **what happens after the 2 years** (needed for the T-3 FAQ and Email #1).
-2. **Beta terms and privacy policy:** make your decisions on the bracketed items in `docs/beta-terms.md` and `docs/privacy-policy.md`, get a lawyer to review them, then publish both and link them from the form and footer.
+2. **Legal review** of the published beta terms and privacy policy (see `docs/legal.md`).
 3. **Founder story** for T-10.
 4. **Screen recording** of the report → invoice flow, needed by T-9 (Sat 21 Nov).
 5. **Which features are in the beta build**, so the ⚠ posts are accurate.
