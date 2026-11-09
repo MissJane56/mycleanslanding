@@ -204,7 +204,7 @@ function LandingPage() {
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
             </div>
-            <div className="w-full max-w-[640px] mx-auto">
+            <div className="w-full max-w-[960px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
                 <div className="p-8 md:p-10 text-center">
@@ -216,7 +216,7 @@ function LandingPage() {
                   <h2 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
                     {content.hero.card.heading}
                   </h2>
-                  <p className="mt-4 text-base leading-relaxed text-muted">{content.hero.card.paragraph}</p>
+                  <p className="mt-4 mx-auto max-w-[720px] text-base leading-relaxed text-muted">{content.hero.card.paragraph}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 text-left">
                     <ProblemColumn label={content.problem.hostsLabel} points={content.problem.hostsPoints} />
