@@ -1,0 +1,351 @@
+{
+  "title": "MyCleans Privacy Policy",
+  "sections": [
+    {
+      "heading": "1. Who we are and what this policy covers",
+      "items": [
+        {
+          "type": "clause",
+          "n": "1.1",
+          "text": "This policy explains how MissJaneVentures Pty Ltd ACN 671838190 (\"MyCleans\", \"we\", \"us\", \"our\") handles personal information on our website at mycleans.com.au (the \"Website\") and in the MyCleans web app, including the beta (the \"App\"). Together we call these our \"Services\"."
+        },
+        {
+          "type": "clause",
+          "n": "1.2",
+          "text": "We handle personal information in line with the Privacy Act 1988 (Cth) and the Australian Privacy Principles. \"Personal information\" means information about an identifiable person."
+        }
+      ]
+    },
+    {
+      "heading": "2. What we collect",
+      "items": [
+        {
+          "type": "h3",
+          "text": "2.1 On the Website"
+        },
+        {
+          "type": "p",
+          "text": "",
+          "sub": [
+            "**Beta applications and waitlist.** Your name, your email, whether you're a cleaner or a host, and where you found us. \"Where you found us\" is the source of the link you used (for example \"instagram\"), or the website that sent you, or \"direct\" if we can't tell.",
+            "**Feature suggestions.** The idea you send us, and your email if you choose to give it.",
+            "**Emails to us.** Anything you send to hello@mycleans.com.au, including your email address and what you tell us.",
+            "**Technical data.** When you visit, our hosting provider records technical information such as your IP address, browser and device type, the pages you request, and the times. We use it to keep the Website running and secure.",
+            "**Fonts.** The Website loads its fonts from Google. This means your browser connects to Google's servers when a page loads, and Google receives technical information such as your IP address.",
+            "**Cookies.** We don't set cookies on the Website for tracking or advertising."
+          ],
+          "subStyle": "bullets"
+        },
+        {
+          "type": "h3",
+          "text": "2.2 In the App"
+        },
+        {
+          "type": "p",
+          "text": "The App is being built and released in stages. This section describes what it's designed to collect. Some features may not be available yet.",
+          "sub": [
+            "**Account and profile.** Your name, email, phone number, password (stored securely), whether you're a cleaner or host, and your business name and ABN if you give them. Cleaners may have a profile (such as service areas and experience) that hosts can see in our directory.",
+            "**Property information (hosts).** Property addresses, access instructions (such as key or door-code details), notes and house rules.",
+            "**Jobs and bookings.** Dates, times, tasks and status. If you link a booking calendar (such as from Airbnb or VRBO), we receive the calendar data it shares, which may include booking dates and, depending on the calendar, guest names or booking references.",
+            "**Condition reports and photos.** Answers to report questions, star ratings, notes, and photos (with timestamps). Photos may accidentally show people or personal belongings.",
+            "**Messages.** Messages between cleaners and hosts in the App.",
+            "**Invoices and payments.** Invoice details, amounts and payment status. Payments are processed by Stripe. We receive limited information, such as payment status and the card type and last four digits. We don't store full card numbers.",
+            "**Usage and device data.** Sign-in times, the features you use, your device and browser, your IP address, and error logs.",
+            "**Beta information.** Your application, whether you're accepted, your feedback, and your Premium Reward under the Beta Terms."
+          ],
+          "subStyle": "bullets"
+        },
+        {
+          "type": "h3",
+          "text": "2.3 Sensitive information"
+        },
+        {
+          "type": "p",
+          "text": "We don't ask for sensitive information, such as health, racial or religious information. Please don't put it in the App. If a photo shows people or private things, tell us and we'll help you remove it."
+        },
+        {
+          "type": "h3",
+          "text": "2.4 Other people's information"
+        },
+        {
+          "type": "p",
+          "text": "If you add information about other people (such as guests, clients or staff), you must be allowed to, and you should only include what's needed. See the Beta Terms for more."
+        }
+      ]
+    },
+    {
+      "heading": "3. How we collect it",
+      "items": [
+        {
+          "type": "p",
+          "text": "",
+          "sub": [
+            "**From you,** when you fill in a form, create an account, use the App or contact us.",
+            "**Automatically,** through logs and technical data when you use our Services.",
+            "**From other users,** for example when a host adds property details or a cleaner sends a report.",
+            "**From other services you connect,** such as booking calendars you link, and Stripe (for payment status)."
+          ],
+          "subStyle": "bullets"
+        }
+      ]
+    },
+    {
+      "heading": "4. Why we use it",
+      "items": [
+        {
+          "type": "p",
+          "text": "We use personal information to:",
+          "sub": [
+            "run the beta, assess applications and choose who to invite;",
+            "create and manage your account and provide the App's features, such as jobs, reports, messages and invoices;",
+            "process payments and issue invoices;",
+            "email you about the beta, our launch, and your account, and answer your questions;",
+            "fix problems, keep the Services secure, prevent misuse and fraud, and improve how the Services work, including by looking at de-identified information (which doesn't identify you);",
+            "keep records and meet our legal obligations; and",
+            "manage the Premium Reward under the Beta Terms."
+          ],
+          "subStyle": "bullets"
+        },
+        {
+          "type": "p",
+          "text": "We only use your information for these purposes, for related purposes you'd reasonably expect, or if you agree or the law allows."
+        }
+      ]
+    },
+    {
+      "heading": "5. Who we share it with",
+      "items": [
+        {
+          "type": "clause",
+          "n": "5.1",
+          "text": "**Other users.** Only as you direct and as needed for a job. For example, a cleaner can see a host's property address and access details for a booked job, a host can see reports and invoices from their cleaner, and a cleaner's directory profile is visible to hosts."
+        },
+        {
+          "type": "clause",
+          "n": "5.2",
+          "text": "**Service providers** who help us run the Services and are only allowed to use your information for that purpose:",
+          "sub": [
+            "**Netlify**, which hosts the Website and stores form submissions;",
+            "**Stripe**, which processes payments;",
+            "our **email service provider**, which sends our emails;",
+            "our **cloud hosting and database providers** for the App; and",
+            "other tools we use for security, spam filtering and support, such as spam filters used by our hosting provider."
+          ],
+          "subStyle": "bullets"
+        },
+        {
+          "type": "clause",
+          "n": "5.3",
+          "text": "**Professional advisers,** such as lawyers and accountants, and **authorities** where the law requires or allows."
+        },
+        {
+          "type": "clause",
+          "n": "5.4",
+          "text": "**A buyer or successor,** if we sell or restructure the business. This policy would continue to apply to your information."
+        },
+        {
+          "type": "clause",
+          "n": "5.5",
+          "text": "We don't sell your personal information, and we don't share it with third parties for their own advertising."
+        }
+      ]
+    },
+    {
+      "heading": "6. Sending information overseas",
+      "items": [
+        {
+          "type": "p",
+          "text": "Some of our providers store or process information outside Australia, including in the United States and possibly other countries. For example, Netlify, Stripe and Google are international companies. We take reasonable steps to make sure overseas providers handle your information in a way that's consistent with the Australian Privacy Principles."
+        }
+      ]
+    },
+    {
+      "heading": "7. Cookies and similar technologies",
+      "items": [
+        {
+          "type": "clause",
+          "n": "7.1",
+          "text": "**Website.** We don't use cookies for tracking or advertising."
+        },
+        {
+          "type": "clause",
+          "n": "7.2",
+          "text": "**App.** The App may use essential cookies or browser storage to keep you signed in and to keep the App secure. We don't use advertising cookies."
+        },
+        {
+          "type": "clause",
+          "n": "7.3",
+          "text": "You can block or delete cookies in your browser settings, but some parts of the App may not work if you do."
+        }
+      ]
+    },
+    {
+      "heading": "8. Emails and marketing",
+      "items": [
+        {
+          "type": "clause",
+          "n": "8.1",
+          "text": "We'll email you about the beta, our launch, and your account. We may send updates and requests for feedback."
+        },
+        {
+          "type": "clause",
+          "n": "8.2",
+          "text": "Every marketing email will say who we are and include an unsubscribe link. If you unsubscribe, we'll stop marketing emails, but we may still send essential messages, such as account, security or beta notices."
+        },
+        {
+          "type": "clause",
+          "n": "8.3",
+          "text": "We won't publish your name, business, photo or comments (for example as a testimonial) without your permission."
+        }
+      ]
+    },
+    {
+      "heading": "9. Keeping information safe, and how long we keep it",
+      "items": [
+        {
+          "type": "clause",
+          "n": "9.1",
+          "text": "We take reasonable steps to protect personal information from misuse, loss and unauthorised access, such as secure connections, access controls and trusted providers. No system is perfectly secure, so please also keep your password safe and don't share your account."
+        },
+        {
+          "type": "clause",
+          "n": "9.2",
+          "text": "We keep information only as long as we need it for the purposes in this policy or as the law requires. When we no longer need it, we delete it or de-identify it."
+        },
+        {
+          "type": "clause",
+          "n": "9.3",
+          "text": "**How long we keep things:**"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Information",
+            "How long"
+          ],
+          "rows": [
+            [
+              "Beta applications and waitlist details",
+              "For as long as we need them to run the beta and our launch, or until you ask us to delete them"
+            ],
+            [
+              "Feature suggestions",
+              "For as long as they're useful to us, or until you ask us to delete them"
+            ],
+            [
+              "Website server logs",
+              "As long as our hosting provider keeps them"
+            ],
+            [
+              "App account and content",
+              "While your account is active, then deleted or de-identified within a reasonable time after you close it"
+            ],
+            [
+              "Invoice and payment records",
+              "As long as the law requires. For tax and accounting records this is generally at least five years"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "10. Data breaches",
+      "items": [
+        {
+          "type": "p",
+          "text": "If a data breach is likely to cause you serious harm, we'll tell you and the Office of the Australian Information Commissioner as the law requires, and we'll tell you what you can do to protect yourself."
+        }
+      ]
+    },
+    {
+      "heading": "11. Your rights: access, correction and deletion",
+      "items": [
+        {
+          "type": "clause",
+          "n": "11.1",
+          "text": "You can ask us for a copy of the personal information we hold about you, ask us to correct it, or ask us to delete it. Email hello@mycleans.com.au."
+        },
+        {
+          "type": "clause",
+          "n": "11.2",
+          "text": "We may need to confirm who you are first. We'll respond within 30 days. We won't charge you to make a request."
+        },
+        {
+          "type": "clause",
+          "n": "11.3",
+          "text": "Sometimes we can't give access or delete information, for example if the law requires us to keep it or it would affect someone else's privacy. If so, we'll tell you why."
+        },
+        {
+          "type": "clause",
+          "n": "11.4",
+          "text": "You can withdraw your consent to marketing at any time by unsubscribing or emailing us."
+        }
+      ]
+    },
+    {
+      "heading": "12. Complaints",
+      "items": [
+        {
+          "type": "clause",
+          "n": "12.1",
+          "text": "If you're concerned about how we've handled your personal information, email hello@mycleans.com.au. We'll acknowledge your complaint and respond within 30 days."
+        },
+        {
+          "type": "clause",
+          "n": "12.2",
+          "text": "If you're not satisfied, you can contact the Office of the Australian Information Commissioner (OAIC): www.oaic.gov.au or 1300 363 992."
+        }
+      ]
+    },
+    {
+      "heading": "13. Children",
+      "items": [
+        {
+          "type": "p",
+          "text": "Our Services are for people aged 18 and over. We don't knowingly collect information from children. If we learn we have, we'll delete it."
+        }
+      ]
+    },
+    {
+      "heading": "14. Other websites and services",
+      "items": [
+        {
+          "type": "p",
+          "text": "Our Services work with, or link to, other services such as Airbnb, VRBO and Stripe. They have their own privacy policies, and we aren't responsible for how they handle your information."
+        }
+      ]
+    },
+    {
+      "heading": "15. Changes to this policy",
+      "items": [
+        {
+          "type": "p",
+          "text": "We may update this policy. The latest version will always be at www.mycleans.com.au/privacypolicy with its date. If we make an important change, we'll email people who have an account or have applied for the beta."
+        }
+      ]
+    },
+    {
+      "heading": "16. Contact us",
+      "items": [
+        {
+          "type": "p",
+          "text": "For privacy questions or requests, contact the MyCleans team:",
+          "sub": [
+            "Email: hello@mycleans.com.au"
+          ],
+          "subStyle": "bullets"
+        }
+      ]
+    }
+  ],
+  "updated": "9 November 2026",
+  "summaryHeading": "Privacy at a glance",
+  "summary": [
+    "We collect only what we need to run our website and the MyCleans app, including the beta.",
+    "On the website, that's your name, email and role if you apply for the beta or send us a suggestion, plus basic technical data.",
+    "In the app, it's the information needed to coordinate cleans: accounts, jobs, reports and photos, messages and invoices.",
+    "We don't sell your personal information, and we don't use it for third-party advertising.",
+    "You can ask to see, correct or delete your information at any time: hello@mycleans.com.au."
+  ],
+  "summaryNote": "This summary is to help you. The full policy below is what counts."
+}
