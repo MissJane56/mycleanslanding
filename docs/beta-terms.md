@@ -25,7 +25,7 @@
 
 ### Things the terms rely on
 
-- **A Privacy Policy.** Clause 8 refers to one, and the site doesn't have one yet. You're collecting names, emails and job content (including photos), so publish one. Whether the Privacy Act applies depends on your turnover (businesses under AUD 3 million are often exempt), but a policy is good practice either way. A lawyer can confirm.
+- **A Privacy Policy.** Clause 8 refers to one. A draft is in `docs/privacy-policy.md`. Publish it at the same time as these terms, and put its link into clause 8.1.
 - **Email rules.** Every marketing email needs your identity and a working unsubscribe link (Spam Act). The email wording at the bottom of this document covers it.
 - **Consistent marketing.** Consumer law prohibits misleading claims, so the offer in your posts must match these terms. Use the same words everywhere ("2 years of free premium access when we launch") and add "Terms apply" with a link.
 - **Unfair contract terms.** Australia's rules cover standard-form contracts with consumers and small businesses, and penalties have applied since late 2023. This draft is deliberately balanced (notice of changes, a promise not to reduce the reward, a right to leave). Ask the lawyer to look especially at clauses 2.2, 13, 14.2 and 15.

@@ -32,7 +32,7 @@ In return, we ask them to use it on real jobs and tell us what works and what do
 The date and the start of the 2 years are settled. These are still open, and every post makes the offer, so settle them first.
 
 1. **What "premium" includes.** The site says MyCleans is free for cleaners and for hosts with one property, with an optional paid subscription for premium features. The offer is only as strong as that list, so write one sentence on what premium covers. The FAQ at T-3 has a slot for it.
-2. **Beta terms.** A draft is in `docs/beta-terms.md`. It needs your decisions on the bracketed items and a lawyer's review before you publish it. Then link it from the application form, and add "Terms apply" wherever you state the offer. Keep a list of every tester's email. It's how you'll honour the offer later.
+2. **Beta terms and privacy policy.** Drafts are in `docs/beta-terms.md` and `docs/privacy-policy.md`. They need your decisions on the bracketed items and a lawyer's review before you publish them. Then link them from the application form and the site footer, and add "Terms apply" wherever you state the offer. Keep a list of every tester's email. It's how you'll honour the offer later.
 3. **Spots.** Say "limited spots" or give a number only if there's a real cap. Otherwise leave it out.
 4. **Features in the beta build.** Posts that mention a feature are tagged ⚠. Only post them if the feature works in the beta. The cleaner directory is left out of this plan because it will be thin until more people join.
 5. **How invites work.** Does everyone who applies get in on 30 Nov, or in batches? The T-1 and beta-day copy needs the answer.
@@ -74,7 +74,7 @@ Confirm which accounts exist and who posts. The plan works with just a page + em
 ## Prep week: Mon 9 to Sun 15 November
 
 - [ ] Settle the "Confirm before posting" list above.
-- [ ] Finish and publish the beta terms (`docs/beta-terms.md`), then link them from the application form.
+- [ ] Finish and publish the beta terms (`docs/beta-terms.md`) and the privacy policy (`docs/privacy-policy.md`), then link both from the application form and the site footer.
 - [ ] Write down today's waitlist total. That's your baseline.
 - [ ] Make a countdown graphic template ("BETA OPENS IN 14 DAYS"). Change only the number each day.
 - [ ] Record a 30 to 45 second screen capture of the report → invoice flow, needed by T-9 (Sat 21 Nov).
@@ -387,7 +387,7 @@ Optional: a separate beta form that also asks how many properties or clients som
 ## Open items
 
 1. **What premium includes**, and **what happens after the 2 years** (needed for the T-3 FAQ and Email #1).
-2. **Beta terms:** make your decisions on the bracketed items in `docs/beta-terms.md`, get a lawyer to review it, then publish it and link it from the form.
+2. **Beta terms and privacy policy:** make your decisions on the bracketed items in `docs/beta-terms.md` and `docs/privacy-policy.md`, get a lawyer to review them, then publish both and link them from the form and footer.
 3. **Founder story** for T-10.
 4. **Screen recording** of the report → invoice flow, needed by T-9 (Sat 21 Nov).
 5. **Which features are in the beta build**, so the ⚠ posts are accurate.
