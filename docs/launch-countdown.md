@@ -1,55 +1,62 @@
 # MyCleans 14-Day Countdown: Beta Tester Recruitment
 
-**Beta opens:** Wednesday 28 October 2026 *(assumed, see "Confirm before posting")*
-**Countdown started:** Wednesday 14 October 2026
-**This revision:** Thursday 15 October 2026 (T-13)
+**Beta opens:** Monday 30 November 2026
+**Countdown starts:** Monday 16 November 2026 (14 days to go)
+**Prep week:** Monday 9 to Sunday 15 November 2026
+**This revision:** Monday 9 November 2026
 
 `T-14` means 14 days to go, `T-1` means tomorrow, and so on down to beta day.
 
-**What changed:** the plan was a public launch on 28 October. It is now a **free beta for testers first**, with the public launch later. The countdown now recruits beta testers. All the copy below is rewritten for that. Replace anything in `[square brackets]` before posting.
+**What changed since the 15 October version:**
+- **New dates.** The earlier countdown (14 to 28 October) has passed. This one runs 16 to 30 November.
+- **New offer.** "Free lifetime access" is now **2 years of free premium access, starting at the public launch**. This matches the site's register heading: "Become a Beta Tester and get 2 years of free premium access!"
+- **New lead image.** The host-and-cleaner illustration (two people holding jigsaw pieces that are about to connect) is the main visual.
+
+All copy below uses the new offer. Replace anything in `[square brackets]` before posting.
 
 ---
 
 ## The offer
 
-> **Use MyCleans free during the beta. Get free lifetime access when it goes live to the public.**
+> **Use MyCleans free during the beta. Get 2 years of free premium access when it goes public.**
 
 Beta testers get:
 - Free use of the app during the beta
-- Free lifetime access once MyCleans goes live to the public
+- 2 years of free premium access, starting when MyCleans goes public
 - A say in what we build next
 
 In return, we ask them to use it on real jobs and tell us what works and what doesn't.
 
 ### Confirm before posting
 
-These decide whether the copy is accurate. Settle them first, because every post makes the offer.
+The date and the start of the 2 years are settled. These are still open, and every post makes the offer, so settle them first.
 
-1. **What "lifetime access" covers.** The site says MyCleans is already free for cleaners and for hosts with one property, with an optional paid subscription for premium features. If lifetime access means free premium features, say so ("free lifetime access to premium"). If it only means the free tier, the offer is weaker, because most of your audience would get that anyway. The FAQ copy at T-3 has a slot for the one-sentence definition.
-2. **Put the terms in writing.** "Lifetime" offers are read as promises. A short beta terms note (what's included, what you expect from testers, what happens if someone stops using it) is worth a quick legal look. Keep a list of every beta tester's email, since that list is how you'll honour the offer later.
-3. **Beta date.** This plan assumes beta access opens on Wed 28 Oct. If that's wrong, change the dates and the "28 October" references in one pass.
-4. **Spots.** Say "limited spots" or a number only if there's a real cap. Otherwise leave it out.
-5. **Features in the beta build.** Posts that mention a feature are tagged ⚠. Only post them if the feature works in the beta. In particular, the cleaner directory is left out of this plan, because it will be thin until more people join.
-6. **How invites work.** Does everyone who applies get in on 28 Oct, or in batches? The T-1 and beta-day copy needs the answer.
-7. **The T-14 post.** If the 14 Oct announcement ("MyCleans launches on 28 October") is already live, see T-13 for how to correct it.
+1. **What "premium" includes.** The site says MyCleans is free for cleaners and for hosts with one property, with an optional paid subscription for premium features. The offer is only as strong as that list, so write one sentence on what premium covers. The FAQ at T-3 has a slot for it.
+2. **Put the terms in writing.** A short beta terms note: what's included, that the 2 years start at the public launch, what happens after the 2 years, and what you expect from testers. "2 years" is much easier to honour and explain than "lifetime", so don't go back to "lifetime" in any post. Keep a list of every tester's email. It's how you'll honour the offer later.
+3. **Anything already out there.** If you told people the beta opens 28 October, or offered "free lifetime access", correct it using the **Reset note** below.
+4. **Spots.** Say "limited spots" or give a number only if there's a real cap. Otherwise leave it out.
+5. **Features in the beta build.** Posts that mention a feature are tagged ⚠. Only post them if the feature works in the beta. The cleaner directory is left out of this plan because it will be thin until more people join.
+6. **How invites work.** Does everyone who applies get in on 30 Nov, or in batches? The T-1 and beta-day copy needs the answer.
+7. **Public launch date.** There isn't one. Don't promise one.
 
 ---
 
 ## Goal
 
-One goal for the fortnight: **beta applications, from both sides** (cleaners and hosts). Every post ends with the same call to action, "Apply for the beta" (link in bio / link in post).
-
-On beta day the call to action switches to "get started" for approved testers.
+One goal for the fortnight: **beta applications, from both sides** (cleaners and hosts). Every post ends with the same call to action, "Apply for the beta" (link in bio / link in post). On beta day it switches to "get started" for approved testers.
 
 ## Ground rules
 
-- **Say "beta" plainly.** Don't call it a launch, and don't imply it's finished. Beta testers are choosing to help build it.
+- **Say "beta" plainly.** Don't call it a launch, and don't imply it's finished. Testers are choosing to help build it.
+- **Say the offer the same way every time:** "2 years of free premium access when it goes public". Never "lifetime" or "free forever".
 - **Speak to both sides.** Most days address both audiences. Single-audience days (cleaners T-12, hosts T-11 and T-8) are spaced out so neither side feels ignored.
-- **Pairs matter.** The report → invoice flow needs a cleaner and a host. Ask people to bring their counterpart (T-11, T-6).
+- **Pairs matter.** The report → invoice flow needs a cleaner and a host. Ask people to bring their counterpart (T-6).
 - **One message per day.**
-- **No invented proof or scarcity.** No testimonials, user counts, "limited spots" or "applications close" unless they're true on the day.
+- **No invented proof or scarcity.** No testimonials, user counts, "limited spots" or "applications close" unless true on the day.
 - **Don't over-promise features.** Only mention what's in the beta build.
-- **Reuse what's real.** Images: `public/images/puzzle.png`, `fistbump.jpg` (cleaner), `hifive.jpg` (host), `logo.png`.
+- **Keep it calm.** This window includes Black Friday (Fri 27 Nov, T-3) and beta day falls on Cyber Monday (30 Nov). Feeds will be full of loud sale posts. Plain, friendly posts will stand out, and the beta-day email should go out early in the morning.
+- **Be light on the ask.** Late November to January is typically a busy time for short-stay hosts and the cleaners who serve them, so keep the time commitment small and say so.
+- **Visuals:** the host-and-cleaner illustration for T-14, T-6 and beta day. Other images: `public/images/puzzle.png`, `fistbump.jpg` (cleaner), `hifive.jpg` (host), `logo.png`.
 - **Australian English**, matching the site.
 
 ## Channels
@@ -58,23 +65,45 @@ On beta day the call to action switches to "get started" for approved testers.
 |---|---|---|
 | Instagram + Facebook page | Main daily post, plus a story each day | Daily |
 | Facebook groups (Airbnb hosts, BnB owners, cleaning businesses) | Where both audiences already talk shop. Follow each group's self-promo rules, and lead with a useful post, not a link drop | T-13, T-9, T-6, T-4 |
-| LinkedIn (personal profile) | Founder voice, property managers | T-13, T-10, T-7, beta day |
-| Email to the waitlist | Existing sign-ups are your warmest audience, so they get the invite first | T-12, T-7, T-2, beta day |
+| LinkedIn (personal profile) | Founder voice, property managers | T-14, T-10, T-7, beta day |
+| Email to the waitlist | Existing sign-ups are your warmest audience, so they get the invite first | T-14, T-7, T-2, beta day |
 
 Confirm which accounts exist and who posts. The plan works with just a page + email if that's all there is.
 
 ---
 
-## Today: Thursday 15 October
+## Prep week: Mon 9 to Sun 15 November
 
-- [ ] Settle the offer terms (the "Confirm before posting" list above).
-- [ ] If the T-14 post is live, add the correction in T-13.
-- [ ] Decide how applications are collected. Right now the site only has "Join the waitlist" (see **Site changes** below).
+- [ ] Settle the "Confirm before posting" list above.
+- [ ] **Publish the site changes before the first post** (see **Site changes**). The beta-first site is built and ready, and visitors from your posts will land on it.
+- [ ] If you told people "28 October", send the **Reset note** this week.
 - [ ] Write down today's waitlist total. That's your baseline.
-- [ ] Draft Email #1 (T-12 has a full draft) and schedule posts for T-13 to T-10.
-- [ ] Make a countdown graphic template ("BETA OPENS IN 13 DAYS"). Change only the number each day.
-- [ ] Record a 30 to 45 second screen capture of the report → invoice flow, needed for T-9.
+- [ ] Save the illustration somewhere you can reach it from your posting tool.
+- [ ] Make a countdown graphic template ("BETA OPENS IN 14 DAYS"). Change only the number each day.
+- [ ] Record a 30 to 45 second screen capture of the report → invoice flow, needed by T-9 (Sat 21 Nov).
 - [ ] Write the founder story for T-10.
+- [ ] Draft the emails (T-14 has a full draft) and schedule posts for T-14 to T-11.
+
+### Reset note (only if earlier dates went out)
+
+**Email to the waitlist** (send Mon 9 or Tue 10 Nov, before the countdown starts)
+
+- **Subject options:** "New date: the MyCleans beta opens 30 November" / "A change of date for the MyCleans beta"
+- **Body:**
+
+> Hi [first name],
+>
+> A quick update. We told you the MyCleans beta would open on 28 October. [One honest sentence on why the date moved.] It now opens on **Monday 30 November**.
+>
+> The offer hasn't changed in spirit, and it's now clearer: use MyCleans free during the beta, and get **2 years of free premium access** when it goes public.
+>
+> Because you're already on our list, you're first to hear when applications open on 16 November. Thanks for your patience.
+>
+> [Your name]
+
+**Social:** add this as the first comment on any earlier post (or edit the caption):
+
+> **Update:** the MyCleans beta now opens on **30 November**. Free to use during the beta, plus 2 years of free premium access when we go public. Details in our latest post.
 
 ### Tracked links
 
@@ -94,74 +123,55 @@ Add `?utm_source=<value>` to the site link on each channel. The waitlist form re
 
 | Countdown | Date | Theme | Audience | Lead asset |
 |---|---|---|---|---|
-| T-14 | Wed 14 Oct | *(posted: public launch announcement, corrected at T-13)* | Both | |
-| T-13 | Thu 15 Oct | Plot twist: a free beta | Both | `puzzle.png` or logo |
-| T-12 | Fri 16 Oct | Cleaners, be first to test | Cleaners | `fistbump.jpg` + **email #1** |
-| T-11 | Sat 17 Oct | Hosts, test it on your own property | Hosts | `hifive.jpg` |
-| T-10 | Sun 18 Oct | Why we're doing a beta | Both | Founder photo |
-| T-9 | Mon 19 Oct | What you get, what we ask | Both | Screen recording |
-| T-8 | Tue 20 Oct | Proof when something's damaged | Hosts | Photo-report mock-up |
-| T-7 | Wed 21 Oct | One week to go | Both | Countdown graphic + **email #2** |
-| T-6 | Thu 22 Oct | Bring your cleaner / your host | Both | Pair graphic |
-| T-5 | Fri 23 Oct | What you'll be testing | Both | Feature checklist |
-| T-4 | Sat 24 Oct | Shape the app | Both | "Suggest a feature" prompt |
-| T-3 | Sun 25 Oct | Beta FAQ | Both | Text card |
-| T-2 | Mon 26 Oct | Last call to apply | Both | Countdown graphic + **email #3** |
-| T-1 | Tue 27 Oct | Tomorrow | Both | Teaser |
-| **Beta day** | **Wed 28 Oct** | **The beta is open** | Both | Graphic + **email #4** |
+| T-14 | Mon 16 Nov | The beta is coming | Both | Host-and-cleaner illustration + **email #1** |
+| T-13 | Tue 17 Nov | The Missing Piece | Both | `puzzle.png` |
+| T-12 | Wed 18 Nov | Cleaners, be first to test | Cleaners | `fistbump.jpg` |
+| T-11 | Thu 19 Nov | Hosts, test it on your own property | Hosts | `hifive.jpg` |
+| T-10 | Fri 20 Nov | Why we're doing a beta | Both | Founder photo |
+| T-9 | Sat 21 Nov | What you get, what we ask | Both | Screen recording |
+| T-8 | Sun 22 Nov | Proof when something's damaged | Hosts | Photo-report mock-up |
+| T-7 | Mon 23 Nov | One week to go | Both | Countdown graphic + **email #2** |
+| T-6 | Tue 24 Nov | Bring your cleaner / your host | Both | Host-and-cleaner illustration |
+| T-5 | Wed 25 Nov | What you'll be testing | Both | Feature checklist |
+| T-4 | Thu 26 Nov | Shape the app | Both | "Suggest a feature" prompt |
+| T-3 | Fri 27 Nov | Beta FAQ (Black Friday) | Both | Text card |
+| T-2 | Sat 28 Nov | Last call to apply | Both | Countdown graphic + **email #3** |
+| T-1 | Sun 29 Nov | Tomorrow | Both | Teaser |
+| **Beta day** | **Mon 30 Nov** | **The beta is open** | Both | Illustration + **email #4** |
 
 ---
 
 ## Day by day
 
-### T-14 · Wed 14 Oct · Already posted
-If the announcement said "MyCleans launches on 28 October", don't delete it. Pin the T-13 post above it, and add this as the first comment (or edit the caption):
+### T-14 · Mon 16 Nov · The beta is coming
+**Audience:** Both · **Asset:** Host-and-cleaner illustration · **Also:** LinkedIn, Email #1 · Pin this post for the rest of the campaign.
 
-> **Update:** MyCleans is now opening as a **free beta** on 28 October. Details in our latest post and the link in bio.
-
-### T-13 · Thu 15 Oct · Plot twist: a free beta
-**Audience:** Both · **Asset:** `puzzle.png` or logo · **Also:** Facebook group, LinkedIn
-
-> Plot twist: we're opening MyCleans to beta testers first.
+> MyCleans is opening a free beta, and we'd love you in it.
 >
-> Instead of a big public launch, we want real cleaners and real short-stay hosts using the app on real jobs and telling us what works.
+> If you're a cleaner or a self-managing short-stay host, you can:
+> ✓ Use the app free during the beta
+> ✓ Get 2 years of free premium access when we go public
+> ✓ Help shape what we build next
 >
-> If you're in, you get:
-> ✓ The app free to use during the beta
-> ✓ Free lifetime access once MyCleans goes live to the public
-> ✓ A say in what we build next
->
-> Beta opens 28 October. Apply via the link in bio.
+> The beta opens 30 November. Apply via the link in bio.
 
-**CTA:** Apply for the beta. **Also:** pin this post for the rest of the campaign.
-
-### T-12 · Fri 16 Oct · Cleaners, be first to test
-**Audience:** Cleaners · **Asset:** `fistbump.jpg` · **Also:** Email #1
-
-> Cleaners, we want you in the MyCleans beta.
->
-> Finish the clean, send the report, and your invoice is generated automatically. You approve it in one click, and when the host approves, you're paid.
->
-> Beta testers use the app free, and get free lifetime access when we go live to the public. Apply via the link in bio.
-
-**CTA:** Cleaners, apply for the beta.
-⚠ Confirm invoicing and payments work in the beta build. If payments aren't live yet, end the second paragraph at "You approve it in one click."
+**CTA:** Apply for the beta.
 
 **Email #1** (everyone already on the waitlist)
 
-- **Subject options:** "Change of plan: you're invited to the MyCleans beta" / "You're on our list. Now you're first in line."
+- **Subject options:** "The MyCleans beta opens 30 November: you're first in line" / "Applications are open: join the MyCleans beta"
 - **Body:**
 
 > Hi [first name],
 >
-> You joined our waitlist for the MyCleans launch. Here's what's changed: before we go public, we're opening a free beta, and because you're already on the list, you're first to hear.
+> You joined our waitlist, so you're the first to hear: applications for the MyCleans beta are open, and the beta starts on **30 November**.
 >
 > If you take part:
 > - You use MyCleans free during the beta.
-> - You get free lifetime access once we go live to the public. [One-sentence definition of what that covers.]
+> - You get **2 years of free premium access** when we go public. [One sentence on what premium includes.]
 > - You help shape what we build next.
 >
-> The beta opens on 28 October. We ask you to use the app on real jobs and tell us what works and what doesn't.
+> We ask you to use the app on real jobs and tell us what works and what doesn't. [It takes about X minutes a week.]
 >
 > **[Apply for the beta]**
 >
@@ -169,32 +179,55 @@ If the announcement said "MyCleans launches on 28 October", don't delete it. Pin
 >
 > [Your name]
 
-### T-11 · Sat 17 Oct · Hosts, test it on your own property
+### T-13 · Tue 17 Nov · The Missing Piece
+**Audience:** Both · **Asset:** `puzzle.png` · **Also:** one Facebook group post
+
+> Hosts, how many apps does it take to message your cleaner, check the clean was done and guess how to rate the last guest?
+>
+> Cleaners, how many hours a week go on chasing payments and invoicing?
+>
+> Same job, two sides, no shared tool. MyCleans is the missing piece, and you can test it free from 30 November.
+
+**CTA:** Apply for the beta.
+
+### T-12 · Wed 18 Nov · Cleaners, be first to test
+**Audience:** Cleaners · **Asset:** `fistbump.jpg`
+
+> Cleaners, we want you in the MyCleans beta.
+>
+> Finish the clean, send the report, and your invoice is generated automatically. You approve it in one click, and when the host approves, you're paid.
+>
+> Beta testers use the app free, then get 2 years of free premium access when we go public. Apply via the link in bio.
+
+**CTA:** Cleaners, apply for the beta.
+⚠ Confirm invoicing and payments work in the beta build. If payments aren't live yet, end the second paragraph at "You approve it in one click."
+
+### T-11 · Thu 19 Nov · Hosts, test it on your own property
 **Audience:** Hosts · **Asset:** `hifive.jpg`
 
 > Hosts: how do you know the last clean was done properly before the next guest arrives?
 >
 > In the MyCleans beta, your cleaner sends an instant condition report with a star rating, so you know exactly how to review the last guest. Protect your Superhost status without being on site.
 >
-> Beta testers use it free and keep free lifetime access when we go public. Bring your cleaner along, because it works best when you're both in. Link in bio.
+> Beta testers use it free, then get 2 years of free premium access when we go public. Bring your cleaner along, because it works best when you're both in. Link in bio.
 
 **CTA:** Hosts, apply for the beta.
 
-### T-10 · Sun 18 Oct · Why we're doing a beta
+### T-10 · Fri 20 Nov · Why we're doing a beta
 **Audience:** Both · **Format:** Founder photo or short talking-to-camera video · **Also:** LinkedIn
 
 You need to write this one. A real story will outperform anything drafted. Prompt:
 
-> I built MyCleans because [the moment you saw the problem, from the host or cleaner side]. Before it goes public I want it tested by the people it's for: real cleaners and real hosts on real jobs, and I want to hear what's wrong with it. In return, you get free use now and free lifetime access later. If that's you, the link is in my bio.
+> I built MyCleans because [the moment you saw the problem, from the host or cleaner side]. Before it goes public I want it tested by the people it's for: real cleaners and real hosts on real jobs, and I want to hear what's wrong with it. In return, you get free use now and 2 years of free premium access when we go public. If that's you, the link is in my bio.
 
 **CTA:** Apply for the beta. Ask a question to encourage comments: "What's the most annoying part of your current setup?"
 
-### T-9 · Mon 19 Oct · What you get, what we ask
+### T-9 · Sat 21 Nov · What you get, what we ask
 **Audience:** Both · **Asset:** Screen recording (15 to 30 seconds) · **Also:** Facebook group
 
 > What a MyCleans beta tester gets:
 > ✓ Free use of the app during the beta
-> ✓ Free lifetime access when we go live to the public
+> ✓ 2 years of free premium access when we go public
 > ✓ A direct line to us. We read every suggestion.
 >
 > What we ask:
@@ -205,19 +238,19 @@ You need to write this one. A real story will outperform anything drafted. Promp
 
 **CTA:** Apply for the beta. Post the recording in the Facebook group with a short "here's how it works" explanation.
 
-### T-8 · Tue 20 Oct · Proof when something's damaged
+### T-8 · Sun 22 Nov · Proof when something's damaged
 **Audience:** Hosts · **Asset:** Mock-up of a photo report
 
 > If something's broken, you want proof, fast.
 >
 > MyCleans reports include timestamped photos, so if you need to claim for damage, the evidence is already documented. No digging through texts.
 >
-> Test it free in the beta, and keep free lifetime access when we go public.
+> Test it free in the beta, then get 2 years of free premium access when we go public.
 
 **CTA:** Hosts, apply for the beta.
 ⚠ Confirm photo reports work in the beta build. Keep the wording to "evidence" and "documented". Don't promise claim outcomes.
 
-### T-7 · Wed 21 Oct · One week to go
+### T-7 · Mon 23 Nov · One week to go
 **Audience:** Both · **Asset:** Countdown graphic · **Also:** Email #2, LinkedIn
 
 > One week until the MyCleans beta opens.
@@ -228,28 +261,28 @@ You need to write this one. A real story will outperform anything drafted. Promp
 > ✓ [Calendar sync with Airbnb and VRBO]
 > ✓ [Messaging between cleaner and host]
 >
-> Free during the beta. Free lifetime access when we go public. Apply via the link in bio.
+> Free during the beta, then 2 years of free premium access when we go public. Apply via the link in bio.
 
 ⚠ List only what's in the beta build.
 
 **Email #2** (waitlist)
 
 - **Subject options:** "One week until the MyCleans beta opens" / "7 days to go: have you applied?"
-- **Body:** What testers get, what's in the beta, what happens on 28 October. A reminder to apply if they haven't, and one ask: forward it to a cleaner or host they work with.
+- **Body:** What testers get, what's in the beta, what happens on 30 November. A reminder to apply if they haven't, and one ask: forward it to a cleaner or host they work with.
 
-### T-6 · Thu 22 Oct · Bring your cleaner / your host
-**Audience:** Both · **Asset:** Simple pair graphic (cleaner + host) · **Also:** Facebook group
+### T-6 · Tue 24 Nov · Bring your cleaner / your host
+**Audience:** Both · **Asset:** Host-and-cleaner illustration · **Also:** Facebook group
 
 > MyCleans works best when both sides are in.
 >
 > Hosts: tag your cleaner. Cleaners: tag a host you work with. Test the whole flow together, from report to invoice to payment.
 >
-> Free during the beta. Free lifetime access when we go public.
+> Free during the beta, then 2 years of free premium access when we go public.
 
 **CTA:** Apply for the beta, together.
 Only add "pairs are invited first" if you'll actually do that.
 
-### T-5 · Fri 23 Oct · What you'll be testing
+### T-5 · Wed 25 Nov · What you'll be testing
 **Audience:** Both · **Asset:** Checklist graphic
 
 > Here's what beta testers will be putting through its paces:
@@ -262,21 +295,22 @@ Only add "pairs are invited first" if you'll actually do that.
 
 **CTA:** Apply for the beta. ⚠ Tick only what's in the beta build.
 
-### T-4 · Sat 24 Oct · Shape the app
+### T-4 · Thu 26 Nov · Shape the app
 **Audience:** Both · **Format:** Question post, Facebook group post, story with a question sticker
 
 > Beta testers decide what we build next. We're 4 days out and still listening. What's the one thing your current cleaning setup is missing?
 >
 > Recurring weekly bookings? SMS reminders? Multi-property dashboards? Tell us. We read every suggestion, and testers' ideas shape the app we take public. (There's a "Suggest a feature" button on the site, too.)
 
-**CTA:** Comment, or use "Suggest a feature". Reply to **every** comment. Expect this to be the most conversational day.
+**CTA:** Comment, or use "Suggest a feature". Reply to **every** comment. Expect this to be the most conversational day, so be present.
 
-### T-3 · Sun 25 Oct · Beta FAQ
-**Audience:** Both · **Format:** Text card or carousel
+### T-3 · Fri 27 Nov · Beta FAQ (Black Friday)
+**Audience:** Both · **Format:** Text card or carousel · Everyone else is posting sales today, so keep this one calm and plain.
 
 > The MyCleans beta, in plain English:
 > • **Is it really free?** Yes, free to use for the whole beta.
-> • **What's free lifetime access?** [One sentence: what's included, and for how long.]
+> • **What do I get for testing?** 2 years of free premium access, starting when MyCleans goes public. [One sentence: what premium includes.]
+> • **What happens after the 2 years?** [One sentence: e.g. you can keep premium at the normal price, or stay on the free plan.]
 > • **What do I have to do?** Use it on real jobs and tell us what works and what doesn't.
 > • **What if something breaks?** It's a beta, so it might. Tell us and we'll fix it.
 > • **How many spots?** [A real number, or "we're inviting testers in groups". Leave out if neither is true.]
@@ -285,7 +319,7 @@ Only add "pairs are invited first" if you'll actually do that.
 **CTA:** Apply for the beta.
 Don't give a public launch date unless you have one.
 
-### T-2 · Mon 26 Oct · Last call to apply
+### T-2 · Sat 28 Nov · Last call to apply
 **Audience:** Both · **Asset:** Countdown graphic · **Also:** Email #3
 
 > 2 days until the beta opens. Apply now so you're in the first group to get access.
@@ -297,27 +331,27 @@ Don't give a public launch date unless you have one.
 
 Don't use fake urgency ("spots running out", "applications closing") unless it's true. If there is a real cutoff, state it exactly.
 
-### T-1 · Tue 27 Oct · Tomorrow
+### T-1 · Sun 29 Nov · Tomorrow
 **Audience:** Both · **Format:** Story takeover (morning, midday, evening), one teaser post
 
 > Tomorrow, the MyCleans beta opens.
 >
 > Cleaners: your invoices write themselves.
 > Hosts: your cleans come with proof.
-> Beta testers: free now, free lifetime access when we go public.
+> Beta testers: free now, then 2 years of free premium access when we go public.
 >
 > Applied? Watch your inbox tomorrow morning. Haven't? There's still time.
 
 ⚠ Say "watch your inbox tomorrow morning" only if invites really go out then.
 **Before bed:** schedule the beta-day posts and Email #4.
 
-### Beta day · Wed 28 Oct · The beta is open
-**Audience:** Both
+### Beta day · Mon 30 Nov · The beta is open
+**Audience:** Both · It's Cyber Monday, so get the email out early.
 
 | Time | Action |
 |---|---|
-| Morning | **Email #4** to approved testers: "Welcome to the MyCleans beta." How to get in, three first steps (e.g. [add your first job, send your first report, tell us one thing]), and how to send feedback. |
-| Morning | Beta-open post on every channel (copy below). |
+| Early morning | **Email #4** to approved testers: "Welcome to the MyCleans beta." How to get in, three first steps (e.g. [add your first job, send your first report, tell us one thing]), and how to send feedback. |
+| Morning | Beta-open post on every channel (copy below), with the host-and-cleaner illustration. |
 | Midday | Re-share the T-9 screen recording as a "how to get started" explainer. |
 | All day | Reply to every comment and message. Reshare anyone who posts about it. |
 | Evening | Thank-you post, with real numbers only if they're good and true. |
@@ -326,15 +360,15 @@ Don't use fake urgency ("spots running out", "applications closing") unless it's
 >
 > Welcome to everyone who applied. If you're in, check your inbox for your invite. If you haven't applied yet, the link is in bio [only if you're still accepting applications].
 >
-> Free to use during the beta. Free lifetime access when we go live to the public. Thank you for helping us build this.
+> Free to use during the beta, then 2 years of free premium access when we go public. Thank you for helping us build this.
 
 ### After beta day
 
 - **Weekly:** a short "you said, we did" post. It shows testers their feedback is used, and shows everyone else the app is improving.
-- **Keep the tester list.** Export every beta applicant from Netlify → Forms. It's how you honour lifetime access later.
+- **Keep the tester list.** Export every beta applicant from Netlify → Forms. It's how you honour the 2 years of premium later.
 - **Testimonials:** ask only testers who agree to be quoted, and quote them exactly.
 - **Check in with pairs** to see if the report → invoice flow works end to end.
-- **Public launch:** a later, separate plan once there's a date.
+- **Public launch:** a later, separate plan once there's a date. The 2 years of premium start then.
 
 ---
 
@@ -347,28 +381,28 @@ Check these once a day, at the same time:
 | Beta applications (total, cleaner vs host, and by channel) | Netlify → Forms → `waitlist` (fields: `role`, `source`, `name`, `email`) | The one number that matters |
 | Pairs (a host and cleaner who apply together) | Ask in the comments / DMs on T-6 | Tests whether the pairs ask works |
 | Link clicks by channel | UTM links in your analytics | Which channels deserve the effort |
-| Email open/click rate | Email tool | T-7 vs T-2 shows whether the list stays warm |
+| Email open/click rate | Email tool | T-14 vs T-7 vs T-2 shows whether the list stays warm |
 | After beta day: testers who send a first report | In the app, or ask in feedback | The real beta success measure |
 
 **How `source` is filled in:** the waitlist form has a hidden `source` field. It takes the `utm_source` value from the link the visitor arrived on. If there's no `utm_source`, it falls back to the referring site's hostname (e.g. `l.instagram.com`), and then to `direct`. Use the tracked links above on everything you post.
 
 ---
 
-## Site changes (not yet applied)
+## Site changes
 
-The live site still says it's launching, which now conflicts with these posts: someone who taps "Apply for the beta" lands on "Launching 28 October" and "Join the waitlist". Proposed changes, in order of urgency:
+The whole site is now beta-first. These changes are built and checked, and go live when they're published.
 
-| Where | Live now | Proposed |
-|---|---|---|
-| Hero badge | "Launching 28 October · N days to go" | "Beta opens 28 October · N days to go". This needs a small code change so the word "Launching" is editable. Fallback text from 29 Oct: "Free beta · Testers wanted". |
-| Nav button | "Register Interest" | "Join the Beta" |
-| Register heading | "Ready to transform how you work?" | "Join the free MyCleans beta" |
-| Register paragraph | "Join the waitlist today. Be first to experience..." | "Be one of the first cleaners and hosts to use MyCleans. It's free during the beta, and you get free lifetime access when we go live to the public." |
-| Submit button | "Join the waitlist" | "Apply for the beta" |
-| Form note | "We'll only email you about the launch." | "No spam, ever. We'll only email you about the beta and the launch." |
-| Success message | "We'll be in touch the moment MyCleans launches." | "Thanks for applying. We'll email you about the beta." |
-| Footer label | "Launching soon" | "Beta opens 28 October" |
-| Search description | Describes a finished product | Add "Join the free beta." |
+- **Hero:** "Test MyCleans free for two months", then "Then get 2 years of free premium access when we launch." The badge counts down ("Beta opens 30 November · N days to go") and falls back to "Free beta · Launching soon" after 30 Nov. Buttons: "Apply for the beta" and "How the beta works".
+- **New "The Beta" section** after the hero: three offer cards (free during the beta, 2 years of free premium, shape what we build), the apply → test for about two months → official launch steps, and the "what we ask" line.
+- **Calls to action** all say "Join the Beta" or "Apply for the beta". The cleaner and host buttons pre-select that role on the form.
+- **Application form** wording is beta-first. It still records `role`, `source`, `name` and `email`, so tracked links and the cleaner/host split keep working.
+- **Kept as they were:** "Suggest a feature" and the "Launching soon" footer label.
+- **Not changed:** the feature and benefit copy in the cleaners, hosts and "What you'll test" sections. Check it against what's actually in the beta build.
+- **Editable in the CMS** (`/admin`): the countdown date and prefix, hero buttons and every field in The Beta section.
+
+**If the beta date moves**, change two things: the countdown date in the Hero fields, and the "The beta opens 30 November" line in step 2 of The Beta section. They're separate fields.
+
+**At the official launch**, the site needs another pass: swap the hero and The Beta section for launch copy, and replace the "Launching soon" footer label.
 
 Optional: a separate beta form that also asks how many properties or clients someone has, which helps you choose who gets in first. Until then, applications arrive in the existing `waitlist` form.
 
@@ -376,10 +410,12 @@ Optional: a separate beta form that also asks how many properties or clients som
 
 ## Open items
 
-1. **Offer terms** (the "Confirm before posting" list at the top).
-2. **Founder story** for T-10.
-3. **Screen recording** of the report → invoice flow, needed by T-9 (Mon 19 Oct).
-4. **Which features are in the beta build**, so the ⚠ posts are accurate.
-5. **How invites work** on 28 Oct.
-6. **Site changes** above: say the word and they can be applied and published.
-7. **Social accounts:** which exist, and who posts.
+1. **What premium includes**, and **what happens after the 2 years** (needed for the T-3 FAQ and Email #1).
+2. **Beta terms in writing** (see "Confirm before posting").
+3. **Founder story** for T-10.
+4. **Screen recording** of the report → invoice flow, needed by T-9 (Sat 21 Nov).
+5. **Which features are in the beta build**, so the ⚠ posts are accurate.
+6. **How invites work** on 30 Nov.
+7. **Publish the site changes** above (they're ready).
+8. **Social accounts:** which exist, and who posts.
+9. **Reset note:** whether to send it depends on whether the 28 October date went out.

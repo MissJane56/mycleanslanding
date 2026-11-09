@@ -41,13 +41,13 @@ function daysUntil(target: Date) {
   return Math.round((target.getTime() - today.getTime()) / 86_400_000)
 }
 
-function launchBadgeText(launchDate: string, daysToGo: number | null, fallback: string) {
+function launchBadgeText(prefix: string, launchDate: string, daysToGo: number | null, fallback: string) {
   const target = parseLaunchDate(launchDate)
   if (!target || (daysToGo !== null && daysToGo < 0)) return fallback
-  if (daysToGo === 0) return 'Launching today'
+  if (daysToGo === 0) return `${prefix} today`
   const dateLabel = target.toLocaleDateString('en-AU', { day: 'numeric', month: 'long' })
-  if (daysToGo === null) return `Launching ${dateLabel}`
-  return `Launching ${dateLabel} · ${daysToGo} ${daysToGo === 1 ? 'day' : 'days'} to go`
+  if (daysToGo === null) return `${prefix} ${dateLabel}`
+  return `${prefix} ${dateLabel} · ${daysToGo} ${daysToGo === 1 ? 'day' : 'days'} to go`
 }
 
 function Check() {
@@ -88,9 +88,9 @@ function CheckLine({ title, desc }: { title: string; desc: string }) {
   )
 }
 
-function FeatureCard({ index, title, desc }: { index: string; title: string; desc: string }) {
+function FeatureCard({ index, title, desc, tone = 'surface' }: { index: string; title: string; desc: string; tone?: 'surface' | 'page' }) {
   return (
-    <div className="p-8 rounded border border-line bg-surface transition-transform hover:-translate-y-1">
+    <div className={`p-8 rounded border border-line ${tone === 'page' ? 'bg-page' : 'bg-surface'} transition-transform hover:-translate-y-1`}>
       <div className="font-display text-sm font-bold text-primary tracking-wide">{index}</div>
       <h3 className="mt-4 text-xl font-bold tracking-tight text-ink">{title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted">{desc}</p>
@@ -175,6 +175,7 @@ function LandingPage() {
           </span>
         </a>
         <div className="hidden lg:flex items-center gap-7 text-sm font-semibold whitespace-nowrap">
+          <a href="#beta" className="text-ink/80 hover:text-ink no-underline">The Beta</a>
           <a href="#cleaners" className="text-ink/80 hover:text-ink no-underline">For Cleaners</a>
           <a href="#hosts" className="text-ink/80 hover:text-ink no-underline">For Hosts</a>
           <a href="#features" className="text-ink/80 hover:text-ink no-underline">How It Works</a>
@@ -194,15 +195,29 @@ function LandingPage() {
             <div className="flex-1 max-w-[620px] mx-auto">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mint text-mint-ink text-xs font-bold tracking-wide">
                 <span className="w-1.5 h-1.5 rounded-full bg-mint-ink inline-block" />
-                {launchBadgeText(content.hero.launchDate, daysToGo, content.hero.badge)}
+                {launchBadgeText(content.hero.launchPrefix, content.hero.launchDate, daysToGo, content.hero.badge)}
               </span>
-              <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink">
+              <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink text-balance">
                 {content.hero.heading}
               </h1>
-              <h2 className="mt-3 font-display text-2xl md:text-3xl font-medium tracking-[-0.01em] text-muted">
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-medium tracking-[-0.01em] text-muted text-balance">
                 {content.hero.subheading}
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="#register"
+                  className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
+                >
+                  {content.hero.cta}
+                </a>
+                <a
+                  href="#beta"
+                  className="inline-flex items-center px-7 py-4 rounded border-[1.5px] border-ink text-ink text-base font-bold no-underline hover:bg-black/5"
+                >
+                  {content.hero.ctaSecondary}
+                </a>
+              </div>
             </div>
             <div className="w-full max-w-[960px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
@@ -240,6 +255,49 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* BETA */}
+      <section id="beta" className="scroll-mt-18 bg-surface">
+        <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
+          <div className="text-center max-w-[680px] mx-auto">
+            <span className="text-xs font-bold tracking-[0.16em] uppercase text-primary">{content.beta.eyebrow}</span>
+            <h2 className="mt-3.5 font-display text-4xl md:text-[50px] font-medium tracking-[-0.02em] leading-tight text-balance">
+              {content.beta.heading}
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-muted">{content.beta.paragraph}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-14">
+            {content.beta.cards.map((card) => (
+              <FeatureCard key={card.index} index={card.index} title={card.title} desc={card.desc} tone="page" />
+            ))}
+          </div>
+          <div className="max-w-[900px] mx-auto mt-16">
+            <h3 className="m-0 text-center text-sm font-extrabold tracking-widest uppercase text-primary">
+              {content.beta.stepsHeading}
+            </h3>
+            <ol className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-8 mt-8 list-none p-0 m-0">
+              {content.beta.steps.map((step, i) => (
+                <li key={step.title} className="flex flex-col items-center text-center">
+                  <span className="flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white font-display text-xl font-semibold">
+                    {i + 1}
+                  </span>
+                  <h4 className="mt-4 mb-0 text-lg font-bold tracking-tight text-ink">{step.title}</h4>
+                  <p className="mt-2 mb-0 text-sm leading-relaxed text-muted">{step.desc}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <p className="mt-12 mb-0 text-center text-base text-ink">{content.beta.ask}</p>
+          <div className="mt-6 text-center">
+            <a
+              href="#register"
+              className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
+            >
+              {content.beta.cta}
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FOR CLEANERS */}
       <section id="cleaners" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
@@ -258,6 +316,7 @@ function LandingPage() {
               </div>
               <a
                 href="#register"
+                onClick={() => setRole('cleaner')}
                 className="inline-flex items-center mt-7 px-6 py-3.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
               >
                 {content.cleaners.cta}
@@ -323,6 +382,7 @@ function LandingPage() {
               </div>
               <a
                 href="#register"
+                onClick={() => setRole('host')}
                 className="inline-flex items-center mt-7 px-6 py-3.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
               >
                 {content.hosts.cta}
@@ -481,13 +541,14 @@ function LandingPage() {
           <div className="flex flex-wrap gap-10 sm:gap-14">
             <div className="grid gap-2.5 text-sm">
               <span className="font-bold text-ink mb-0.5">The App</span>
+              <a href="#beta" className="text-muted no-underline hover:text-ink">The Beta</a>
               <a href="#cleaners" className="text-muted no-underline hover:text-ink">For Cleaners</a>
               <a href="#hosts" className="text-muted no-underline hover:text-ink">For Hosts</a>
               <a href="#features" className="text-muted no-underline hover:text-ink">Features</a>
             </div>
             <div className="grid gap-2.5 text-sm">
               <span className="font-bold text-ink mb-0.5">Get started</span>
-              <a href="#register" className="text-muted no-underline hover:text-ink">Register interest</a>
+              <a href="#register" className="text-muted no-underline hover:text-ink">{content.nav.ctaLabel}</a>
               <span className="text-primary font-bold">Launching soon</span>
             </div>
             <div className="grid gap-2.5 text-sm">
