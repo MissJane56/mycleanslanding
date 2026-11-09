@@ -68,14 +68,14 @@
   },
   "problem": {
     "solutionLabel": "The Solution",
-    "hostsLabel": "Hosts",
+    "hostsLabel": "Challenges for Hosts",
     "hostsPoints": [
       "Different platforms for messaging",
       "No proof a clean was completed",
       "Last-minute cleaner cancellations",
       "Having to guess on guest ratings"
     ],
-    "cleanersLabel": "Cleaners",
+    "cleanersLabel": "Challenges for Cleaners",
     "cleanersPoints": [
       "Finding time to invoice",
       "Managing bookings manually",

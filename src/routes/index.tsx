@@ -171,17 +171,17 @@ function LandingPage() {
             <span>
               My<span className="text-primary">Cleans</span>
             </span>
-            <span className="text-[11px] font-medium tracking-wide text-muted">{content.nav.tagline}</span>
+            <span className="text-xs font-medium tracking-wide text-muted md:whitespace-nowrap">{content.nav.tagline}</span>
           </span>
         </a>
-        <div className="hidden md:flex items-center gap-7 text-sm font-semibold">
+        <div className="hidden lg:flex items-center gap-7 text-sm font-semibold whitespace-nowrap">
           <a href="#cleaners" className="text-ink/80 hover:text-ink no-underline">For Cleaners</a>
           <a href="#hosts" className="text-ink/80 hover:text-ink no-underline">For Hosts</a>
           <a href="#features" className="text-ink/80 hover:text-ink no-underline">How It Works</a>
         </div>
         <a
           href="#register"
-          className="inline-flex items-center px-5 py-2.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95"
+          className="inline-flex items-center px-5 py-2.5 rounded bg-primary text-white text-sm font-bold no-underline hover:brightness-95 md:whitespace-nowrap"
         >
           {content.nav.ctaLabel}
         </a>
@@ -204,7 +204,7 @@ function LandingPage() {
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
             </div>
-            <div className="w-full max-w-[640px] mx-auto">
+            <div className="w-full max-w-[960px] mx-auto">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
                 <div className="p-8 md:p-10 text-center">
@@ -216,7 +216,7 @@ function LandingPage() {
                   <h2 className="mt-4 font-display text-2xl font-medium tracking-[-0.02em] leading-tight text-ink">
                     {content.hero.card.heading}
                   </h2>
-                  <p className="mt-4 text-base leading-relaxed text-muted">{content.hero.card.paragraph}</p>
+                  <p className="mt-4 mx-auto max-w-[720px] text-base leading-relaxed text-muted">{content.hero.card.paragraph}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 text-left">
                     <ProblemColumn label={content.problem.hostsLabel} points={content.problem.hostsPoints} />
