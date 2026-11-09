@@ -75,7 +75,7 @@ Confirm which accounts exist and who posts. The plan works with just a page + em
 ## Prep week: Mon 9 to Sun 15 November
 
 - [ ] Settle the "Confirm before posting" list above.
-- [ ] **Fix the site copy before the first post.** The heading already says "2 years of free premium access". The rest still says "waitlist", "launches" and "Launching soon" (see **Site changes**). Visitors from your posts will see it.
+- [ ] **Publish the site changes before the first post** (see **Site changes**). The beta-first site is built and ready, and visitors from your posts will land on it.
 - [ ] If you told people "28 October", send the **Reset note** this week.
 - [ ] Write down today's waitlist total. That's your baseline.
 - [ ] Save the illustration somewhere you can reach it from your posting tool.
