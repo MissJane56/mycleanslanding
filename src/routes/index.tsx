@@ -390,7 +390,7 @@ function LandingPage() {
       <section id="cleaners" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap items-start gap-8">
-            <div className="flex-none w-full sm:w-auto sm:max-w-[420px] min-w-80">
+            <div className="flex-none w-full sm:w-auto sm:max-w-[420px] min-w-[min(20rem,100%)]">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
                 {content.cleaners.eyebrow}
               </span>
@@ -410,7 +410,7 @@ function LandingPage() {
                 {content.cleaners.cta}
               </a>
             </div>
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img src={content.cleaners.image} alt={content.cleaners.imageAlt} className="block w-full h-auto" />
               </div>
@@ -450,12 +450,12 @@ function LandingPage() {
       <section id="hosts" className="scroll-mt-18 bg-surface">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap-reverse items-start gap-8">
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img src={content.hosts.image} alt={content.hosts.imageAlt} className="block w-full h-auto" />
               </div>
             </div>
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
                 {content.hosts.eyebrow}
               </span>
