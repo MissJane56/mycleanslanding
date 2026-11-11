@@ -129,6 +129,67 @@ function ProblemColumn({ label, points }: { label: string; points: string[] }) {
   )
 }
 
+function HouseIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 11.5 12 4l9 7.5" />
+      <path d="M5.5 10v9.5h13V10" />
+      <path d="M10 19.5v-5h4v5" />
+    </svg>
+  )
+}
+
+function SparkleIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M10.5 6.5 12 11l4.5 1.5L12 14l-1.5 4.5L9 14l-4.5-1.5L9 11z" />
+      <path d="M18 3.5v4M16 5.5h4" />
+      <path d="M18.5 15.5v4M16.5 17.5h4" />
+    </svg>
+  )
+}
+
+function ConnectNode({ label, icon }: { label: string; icon: React.ReactNode }) {
+  return (
+    <div className="w-full max-w-[280px] rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
+      <div className="h-1.5 bg-primary" />
+      <div className="flex flex-col items-center gap-3 md:gap-4 px-6 py-6 md:py-10">
+        <span className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-mint text-mint-ink">{icon}</span>
+        <span className="font-display text-4xl md:text-5xl font-medium tracking-[-0.02em] leading-none text-ink">{label}</span>
+      </div>
+    </div>
+  )
+}
+
+function ConnectArrow() {
+  return (
+    <>
+      <svg aria-hidden="true" viewBox="0 0 32 88" className="md:hidden block flex-none w-8 h-22 text-primary" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 4v76" />
+        <path d="M6 68l10 12 10-12" />
+      </svg>
+      <svg aria-hidden="true" viewBox="0 0 120 32" className="hidden md:block flex-none w-30 h-8 text-primary" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 16h112" />
+        <path d="M104 6l12 10-12 10" />
+      </svg>
+    </>
+  )
+}
+
+function HostsToCleaners({ hosts, cleaners }: { hosts: string; cleaners: string }) {
+  return (
+    <div
+      role="img"
+      aria-label={`${hosts} connect with ${cleaners}`}
+      className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 w-full"
+    >
+      <ConnectNode label={hosts} icon={<HouseIcon />} />
+      <ConnectArrow />
+      <ConnectNode label={cleaners} icon={<SparkleIcon />} />
+    </div>
+  )
+}
+
 function LandingPage() {
   const [role, setRole] = useState<'cleaner' | 'host'>('cleaner')
   const [waitlistState, setWaitlistState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
@@ -203,39 +264,15 @@ function LandingPage() {
         </a>
       </nav>
 
-      {/* HERO */}
+      {/* TOP: HOSTS -> CLEANERS + THE PROBLEM */}
       <section id="top" className="bg-page scroll-mt-20">
-        <div className="max-w-[1180px] mx-auto px-6 md:px-16 pt-20 md:pt-24 pb-10 md:pb-12">
-          <div className="flex flex-col items-center text-center gap-14">
-            <div className="flex-1 max-w-[620px] mx-auto">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mint text-mint-ink text-xs font-bold tracking-wide">
-                <span className="w-1.5 h-1.5 rounded-full bg-mint-ink inline-block" />
-                {launchBadgeText(content.hero.launchPrefix, content.hero.launchDate, daysToGo, content.hero.badge)}
-              </span>
-              <h1 className="mt-5 font-display text-[clamp(40px,8vw,72px)] font-medium tracking-[-0.02em] leading-[1.02] text-ink text-balance">
-                {content.hero.heading}
-              </h1>
-              <h2 className="mt-3 font-display text-2xl md:text-3xl font-medium tracking-[-0.01em] text-muted text-balance">
-                {content.hero.subheading}
-              </h2>
-              <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                <a
-                  href="#register"
-                  className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
-                >
-                  {content.hero.cta}
-                </a>
-                <a
-                  href="#beta"
-                  className="inline-flex items-center px-7 py-4 rounded border-[1.5px] border-ink text-ink text-base font-bold no-underline hover:bg-black/5"
-                >
-                  {content.hero.ctaSecondary}
-                </a>
-              </div>
-              <TermsApply />
-            </div>
-            <div className="w-full max-w-[960px] mx-auto">
+        <div className="max-w-[1180px] mx-auto px-6 md:px-16 pt-12 md:pt-20 pb-12 md:pb-16">
+          <div className="flex flex-col items-center text-center">
+            <HostsToCleaners hosts={content.connect.hosts} cleaners={content.connect.cleaners} />
+            <h1 className="mt-10 max-w-[760px] font-display text-[clamp(30px,5vw,48px)] font-medium tracking-[-0.02em] leading-tight text-ink text-balance">
+              {content.connect.heading}
+            </h1>
+            <div className="mt-12 w-full max-w-[960px]">
               <div className="rounded overflow-hidden bg-surface border border-line shadow-[0_24px_60px_rgba(10,30,22,0.13)]">
                 <div className="h-1.5 bg-primary" />
                 <div className="p-8 md:p-10 text-center">
@@ -267,6 +304,40 @@ function LandingPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HERO */}
+      <section className="bg-page border-t border-line">
+        <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-14 md:py-20">
+          <div className="max-w-[620px] mx-auto text-center">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mint text-mint-ink text-xs font-bold tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-mint-ink inline-block" />
+              {launchBadgeText(content.hero.launchPrefix, content.hero.launchDate, daysToGo, content.hero.badge)}
+            </span>
+            <h2 className="mt-5 font-display text-[clamp(30px,5vw,44px)] font-medium tracking-[-0.02em] leading-[1.05] text-ink text-balance">
+              {content.hero.heading}
+            </h2>
+            <p className="mt-3 mb-0 font-display text-xl md:text-2xl font-medium tracking-[-0.01em] text-muted text-balance">
+              {content.hero.subheading}
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted max-w-[540px] mx-auto">{content.hero.paragraph}</p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="#register"
+                className="inline-flex items-center px-7 py-4 rounded bg-primary text-white text-base font-bold no-underline hover:brightness-95"
+              >
+                {content.hero.cta}
+              </a>
+              <a
+                href="#beta"
+                className="inline-flex items-center px-7 py-4 rounded border-[1.5px] border-ink text-ink text-base font-bold no-underline hover:bg-black/5"
+              >
+                {content.hero.ctaSecondary}
+              </a>
+            </div>
+            <TermsApply />
           </div>
         </div>
       </section>
@@ -319,7 +390,7 @@ function LandingPage() {
       <section id="cleaners" className="scroll-mt-18 bg-page">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap items-start gap-8">
-            <div className="flex-none w-full sm:w-auto sm:max-w-[420px] min-w-80">
+            <div className="flex-none w-full sm:w-auto sm:max-w-[420px] min-w-[min(20rem,100%)]">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
                 {content.cleaners.eyebrow}
               </span>
@@ -339,7 +410,7 @@ function LandingPage() {
                 {content.cleaners.cta}
               </a>
             </div>
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img src={content.cleaners.image} alt={content.cleaners.imageAlt} className="block w-full h-auto" />
               </div>
@@ -379,12 +450,12 @@ function LandingPage() {
       <section id="hosts" className="scroll-mt-18 bg-surface">
         <div className="max-w-[1180px] mx-auto px-6 md:px-16 py-20 md:py-24">
           <div className="flex flex-wrap-reverse items-start gap-8">
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <div className="w-full rounded overflow-hidden border border-line shadow-[0_18px_44px_rgba(10,30,22,0.13)]">
                 <img src={content.hosts.image} alt={content.hosts.imageAlt} className="block w-full h-auto" />
               </div>
             </div>
-            <div className="flex-1 min-w-80">
+            <div className="flex-1 min-w-[min(20rem,100%)]">
               <span className="text-sm font-extrabold tracking-widest uppercase text-primary">
                 {content.hosts.eyebrow}
               </span>

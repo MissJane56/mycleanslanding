@@ -56,6 +56,14 @@ collections:
               - { label: "Tagline (under logo)", name: "tagline", widget: "string" }
               - { label: "Register Button Label", name: "ctaLabel", widget: "string" }
 
+          - label: "Top Graphic (Hosts to Cleaners, above everything else)"
+            name: "connect"
+            widget: "object"
+            fields:
+              - { label: "Left Word", name: "hosts", widget: "string" }
+              - { label: "Right Word", name: "cleaners", widget: "string" }
+              - { label: "Heading Under the Graphic", name: "heading", widget: "string" }
+
           - label: "Hero Section"
             name: "hero"
             widget: "object"

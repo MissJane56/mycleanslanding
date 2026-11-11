@@ -3,6 +3,11 @@
     "tagline": "Creating Clean Connections",
     "ctaLabel": "Join the Beta"
   },
+  "connect": {
+    "hosts": "Hosts",
+    "cleaners": "Cleaners",
+    "heading": "Creating clean connections between professional cleaners and self-managing BnB hosts."
+  },
   "register": {
     "eyebrow": "Beta applications",
     "heading": "Become a Beta Tester and get 2 years of free premium access!",
