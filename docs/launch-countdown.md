@@ -372,7 +372,8 @@ Check these once a day, at the same time:
 
 The whole site is now beta-first, and it's live (published 9 Nov).
 
-- **Hero:** "Test MyCleans free for two months", then "Then get 2 years of free premium access when we launch." The badge counts down ("Beta opens 30 November · N days to go") and falls back to "Free beta · Launching soon" after 30 Nov. Buttons: "Apply for the beta" and "How the beta works".
+- **Top of the page (what visitors see first):** a Hosts → Cleaners graphic, the line "Creating clean connections between professional cleaners and self-managing BnB hosts.", and the "Missing Piece" card listing the challenges for hosts and for cleaners. The beta offer comes after it. Editable in the CMS under "Top Graphic".
+- **Hero (below the problems card):** "Test MyCleans free for two months", then "Then get 2 years of free premium access when we launch." The badge counts down ("Beta opens 30 November · N days to go") and falls back to "Free beta · Launching soon" after 30 Nov. Buttons: "Apply for the beta" and "How the beta works".
 - **New "The Beta" section** after the hero: three offer cards (free during the beta, 2 years of free premium, shape what we build), the apply → test for about two months → official launch steps, and the "what we ask" line.
 - **Calls to action** all say "Join the Beta" or "Apply for the beta". The cleaner and host buttons pre-select that role on the form.
 - **Application form** wording is beta-first. It still records `role`, `source`, `name` and `email`, so tracked links and the cleaner/host split keep working.
